@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2gxT2bgM/U4FYLmU3HX9b2dyC4tw89w4Dz21wckqDNE=",
+  "Hash": "eUUTvX+8I3LRWNLdhaJ9OoqCTbDHVHgS54g6MykNmOo=",
   "Source": "SportsApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -10,17 +10,17 @@
     {
       "Name": "SportsApp/wwwroot",
       "Source": "SportsApp",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/bundle/SportsApp.styles.css",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/bundle/SportsApp.styles.css",
       "SourceId": "SportsApp",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/bundle/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/bundle/",
       "BasePath": "/",
       "RelativePath": "SportsApp.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/bundle/SportsApp.styles.css"
+      "OriginalItemSpec": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/bundle/SportsApp.styles.css"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/projectbundle/SportsApp.bundle.scp.css",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/projectbundle/SportsApp.bundle.scp.css",
       "SourceId": "SportsApp",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/projectbundle/",
       "BasePath": "/",
       "RelativePath": "SportsApp.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/projectbundle/SportsApp.bundle.scp.css"
+      "OriginalItemSpec": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/projectbundle/SportsApp.bundle.scp.css"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/app.css",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/app.css",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot/css/app.css"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/bootstrap/bootstrap.min.css",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/FONT-LICENSE",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/FONT-LICENSE",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.eot"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.otf"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.svg"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.woff"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/ICON-LICENSE",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/ICON-LICENSE",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/ICON-LICENSE"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/README.md",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/README.md",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/favicon.ico",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/favicon.ico",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/index.html",
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/index.html",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "index.html",
       "AssetKind": "All",
