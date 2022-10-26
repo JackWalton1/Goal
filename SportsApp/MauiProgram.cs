@@ -3,6 +3,7 @@ using SportsApp.Data;
 
 namespace SportsApp;
 
+// Comment to test git -- delete
 public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
