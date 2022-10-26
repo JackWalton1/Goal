@@ -1,4 +1,4 @@
-﻿namespace GoalSportsApp;
+﻿namespace SportsApp;
 
 public partial class MainPage : ContentPage
 {
@@ -7,4 +7,3 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 }
-

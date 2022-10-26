@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.WebView.Maui;
-using GoalSportsApp.Data;
+using SportsApp.Data;
 
-namespace GoalSportsApp;
+namespace SportsApp;
 
 public static class MauiProgram
 {
@@ -25,4 +25,3 @@ public static class MauiProgram
 		return builder.Build();
 	}
 }
-

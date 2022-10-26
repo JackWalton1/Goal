@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace GoalSportsApp;
+namespace SportsApp;
 
 class Program : MauiApplication
 {
@@ -14,4 +14,3 @@ class Program : MauiApplication
 		app.Run(args);
 	}
 }
-

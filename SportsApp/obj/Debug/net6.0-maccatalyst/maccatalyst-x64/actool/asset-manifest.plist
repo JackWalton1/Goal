@@ -6,9 +6,9 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/carter/Projects/GoalSportsApp/GoalSportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/actool/bundle/Assets.car</string>
-			<string>/Users/carter/Projects/GoalSportsApp/GoalSportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/actool/bundle/appicon.icns</string>
-			<string>/Users/carter/Projects/GoalSportsApp/GoalSportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/actool/partial-info.plist</string>
+			<string>/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/actool/bundle/Assets.car</string>
+			<string>/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/actool/bundle/appicon.icns</string>
+			<string>/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/actool/partial-info.plist</string>
 		</array>
 	</dict>
 </dict>

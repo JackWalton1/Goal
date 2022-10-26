@@ -1,6 +1,6 @@
 ﻿@page "/fetchdata"
 
-@using GoalSportsApp.Data
+@using SportsApp.Data
 @inject WeatherForecastService ForecastService
 
 <h1>Weather forecast</h1>
@@ -44,4 +44,3 @@ else
 		forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
 	}
 }
-

@@ -1,4 +1,4 @@
-﻿namespace GoalSportsApp.Data;
+namespace SportsApp.Data;
 
 public class WeatherForecast
 {
@@ -10,4 +10,3 @@ public class WeatherForecast
 
 	public string Summary { get; set; }
 }
-

@@ -1,4 +1,4 @@
-﻿namespace GoalSportsApp.Data;
+namespace SportsApp.Data;
 
 public class WeatherForecastService
 {
@@ -17,5 +17,4 @@ public class WeatherForecastService
 		}).ToArray());
 	}
 }
-
 

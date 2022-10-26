@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("GoalSportsApp")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("SportsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("GoalSportsApp")]
-[assembly: System.Reflection.AssemblyTitleAttribute("GoalSportsApp")]
+[assembly: System.Reflection.AssemblyProductAttribute("SportsApp")]
+[assembly: System.Reflection.AssemblyTitleAttribute("SportsApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Android31.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Android24.0")]

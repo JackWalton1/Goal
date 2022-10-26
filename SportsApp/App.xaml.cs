@@ -1,4 +1,4 @@
-﻿namespace GoalSportsApp;
+﻿namespace SportsApp;
 
 public partial class App : Application
 {
@@ -9,4 +9,3 @@ public partial class App : Application
 		MainPage = new MainPage();
 	}
 }
-

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/carter/Projects/GoalSportsApp/GoalSportsApp/SportsApp.csproj": {}
+    "/Users/carter/Projects/sportsapp/SportsApp/SportsApp.csproj": {}
   },
   "projects": {
-    "/Users/carter/Projects/GoalSportsApp/GoalSportsApp/SportsApp.csproj": {
+    "/Users/carter/Projects/sportsapp/SportsApp/SportsApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carter/Projects/GoalSportsApp/GoalSportsApp/SportsApp.csproj",
+        "projectUniqueName": "/Users/carter/Projects/sportsapp/SportsApp/SportsApp.csproj",
         "projectName": "SportsApp",
-        "projectPath": "/Users/carter/Projects/GoalSportsApp/GoalSportsApp/SportsApp.csproj",
+        "projectPath": "/Users/carter/Projects/sportsapp/SportsApp/SportsApp.csproj",
         "packagesPath": "/Users/carter/.nuget/packages/",
-        "outputPath": "/Users/carter/Projects/GoalSportsApp/GoalSportsApp/obj/",
+        "outputPath": "/Users/carter/Projects/sportsapp/SportsApp/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [

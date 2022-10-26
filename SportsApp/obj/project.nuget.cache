@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F7/FhPMzZeDi/HkamyhrHLWUl7nFEhbhZaxVWKMBKH9qc4geZBz/iyb6JoQ88N5WhDJatd2ImsKAqQ/vJEY+Cg==",
+  "dgSpecHash": "6euK1YWoSDBdMU212MgkZP4dvXWSh9JcCu9h7G/mdBaN66yvJuZeHmG4Wibt+Ztn6bRWQZ8CA7XtInunjeCxuQ==",
   "success": true,
-  "projectFilePath": "/Users/carter/Projects/GoalSportsApp/GoalSportsApp/SportsApp.csproj",
+  "projectFilePath": "/Users/carter/Projects/sportsapp/SportsApp/SportsApp.csproj",
   "expectedPackageFiles": [
     "/Users/carter/.nuget/packages/googlegson/2.9.0.1/googlegson.2.9.0.1.nupkg.sha512",
     "/Users/carter/.nuget/packages/microsoft.aspnetcore.authorization/6.0.8/microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",

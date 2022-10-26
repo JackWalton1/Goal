@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace GoalSportsApp;
+namespace SportsApp;
 
 [Application]
 public class MainApplication : MauiApplication
@@ -13,4 +13,3 @@ public class MainApplication : MauiApplication
 
 	protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
 }
-
