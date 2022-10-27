@@ -856,3 +856,4 @@
 /Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/image_template2.png
 /Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/image_template2@2x.png
 /Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/image_template2@3x.png
+/Users/carter/Projects/sportsapp/SportsApp/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/MudBlazor.dll

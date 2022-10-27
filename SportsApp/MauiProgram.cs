@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.WebView.Maui;
 using SportsApp.Data;
+using MudBlazor.Services;
 
 namespace SportsApp;
 
@@ -16,12 +17,16 @@ public static class MauiProgram
 			});
 
 		builder.Services.AddMauiBlazorWebView();
-		#if DEBUG
-		builder.Services.AddBlazorWebViewDeveloperTools();
+        builder.Services.AddMudServices();
+#if DEBUG
+        builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
 		
 		builder.Services.AddSingleton<WeatherForecastService>();
 
-		return builder.Build();
+		
+
+
+        return builder.Build();
 	}
 }

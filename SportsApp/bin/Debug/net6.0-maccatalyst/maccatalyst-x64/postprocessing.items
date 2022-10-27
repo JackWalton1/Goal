@@ -9,7 +9,7 @@
       <dSYMInfoPlistRelativePath>SportsApp.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
       <SymbolFile>obj/Debug/net6.0-maccatalyst/maccatalyst-x64/mtouch-symbols.list</SymbolFile>
       <DSymName>SportsApp.app.dSYM</DSymName>
-      <SourceProjectPath>/Users/jackwalton/Projects/sportsapp/SportsApp</SourceProjectPath>
+      <SourceProjectPath>/Users/carter/Projects/sportsapp/SportsApp</SourceProjectPath>
     </_PostProcessingItem>
   </ItemGroup>
 </Project>

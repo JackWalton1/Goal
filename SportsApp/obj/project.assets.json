@@ -15,11 +15,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -33,11 +33,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -50,16 +50,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -72,13 +72,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -92,14 +92,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -113,12 +113,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8"
         },
         "compile": {
           "lib/net6.0-android31.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
@@ -135,7 +135,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -309,7 +309,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -388,7 +388,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -440,7 +440,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -453,7 +453,7 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
@@ -470,7 +470,7 @@
           "Xamarin.Google.Crypto.Tink.Android": "1.6.1.6"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -490,6 +490,29 @@
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -2317,11 +2340,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -2335,11 +2358,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -2352,16 +2375,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -2374,13 +2397,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -2394,14 +2417,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -2415,12 +2438,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8"
         },
         "compile": {
           "lib/net6.0-android31.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
@@ -2437,7 +2460,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -2611,7 +2634,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -2690,7 +2713,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -2742,7 +2765,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -2755,7 +2778,7 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
@@ -2772,7 +2795,7 @@
           "Xamarin.Google.Crypto.Tink.Android": "1.6.1.6"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -2792,6 +2815,29 @@
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -4613,11 +4659,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -4631,11 +4677,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -4648,16 +4694,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -4670,13 +4716,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -4690,14 +4736,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -4711,12 +4757,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8"
         },
         "compile": {
           "lib/net6.0-android31.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
@@ -4733,7 +4779,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -4907,7 +4953,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -4986,7 +5032,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -5038,7 +5084,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -5051,7 +5097,7 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
@@ -5068,7 +5114,7 @@
           "Xamarin.Google.Crypto.Tink.Android": "1.6.1.6"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -5088,6 +5134,29 @@
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -6909,11 +6978,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -6927,11 +6996,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -6944,16 +7013,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -6966,13 +7035,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -6986,14 +7055,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -7007,12 +7076,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8"
         },
         "compile": {
           "lib/net6.0-android31.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
@@ -7029,7 +7098,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -7203,7 +7272,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -7282,7 +7351,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -7334,7 +7403,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -7347,7 +7416,7 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
@@ -7364,7 +7433,7 @@
           "Xamarin.Google.Crypto.Tink.Android": "1.6.1.6"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -7384,6 +7453,29 @@
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -9205,11 +9297,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -9223,11 +9315,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -9240,16 +9332,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -9262,13 +9354,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -9282,14 +9374,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -9303,12 +9395,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8"
         },
         "compile": {
           "lib/net6.0-android31.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
@@ -9325,7 +9417,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -9499,7 +9591,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -9578,7 +9670,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -9630,7 +9722,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -9643,7 +9735,7 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
@@ -9660,7 +9752,7 @@
           "Xamarin.Google.Crypto.Tink.Android": "1.6.1.6"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -9680,6 +9772,29 @@
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -11501,11 +11616,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -11519,11 +11634,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -11536,16 +11651,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -11558,13 +11673,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -11578,14 +11693,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -11599,12 +11714,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8"
         },
         "compile": {
           "lib/net6.0-android31.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
@@ -11621,7 +11736,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -11795,7 +11910,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -11874,7 +11989,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -11926,7 +12041,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -11939,7 +12054,7 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
@@ -11956,7 +12071,7 @@
           "Xamarin.Google.Crypto.Tink.Android": "1.6.1.6"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -11976,6 +12091,29 @@
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -13797,11 +13935,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -13815,11 +13953,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -13832,16 +13970,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -13854,13 +13992,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -13874,14 +14012,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -13895,12 +14033,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8"
         },
         "compile": {
           "lib/net6.0-android31.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
@@ -13917,7 +14055,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -14091,7 +14229,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -14170,7 +14308,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -14222,7 +14360,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -14235,7 +14373,7 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
@@ -14252,7 +14390,7 @@
           "Xamarin.Google.Crypto.Tink.Android": "1.6.1.6"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -14272,6 +14410,29 @@
           "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -16079,12 +16240,12 @@
         }
       }
     },
-    "net6.0-ios15.4": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+    "net6.0-ios16.0": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -16098,11 +16259,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -16115,16 +16276,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -16137,13 +16298,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -16157,14 +16318,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -16178,21 +16339,21 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -16201,7 +16362,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -16375,7 +16536,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -16454,7 +16615,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -16506,7 +16667,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -16519,14 +16680,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -16547,6 +16708,29 @@
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -16654,12 +16838,12 @@
         }
       }
     },
-    "net6.0-ios15.4/android-arm": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+    "net6.0-ios16.0/android-arm": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -16673,11 +16857,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -16690,16 +16874,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -16712,13 +16896,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -16732,14 +16916,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -16753,21 +16937,21 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -16776,7 +16960,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -16950,7 +17134,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -17029,7 +17213,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -17081,7 +17265,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -17094,14 +17278,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -17122,6 +17306,29 @@
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -17223,12 +17430,12 @@
         }
       }
     },
-    "net6.0-ios15.4/android-arm64": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+    "net6.0-ios16.0/android-arm64": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -17242,11 +17449,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -17259,16 +17466,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -17281,13 +17488,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -17301,14 +17508,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -17322,21 +17529,21 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -17345,7 +17552,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -17519,7 +17726,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -17598,7 +17805,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -17650,7 +17857,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -17663,14 +17870,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -17691,6 +17898,29 @@
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -17792,12 +18022,12 @@
         }
       }
     },
-    "net6.0-ios15.4/android-x64": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+    "net6.0-ios16.0/android-x64": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -17811,11 +18041,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -17828,16 +18058,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -17850,13 +18080,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -17870,14 +18100,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -17891,21 +18121,21 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -17914,7 +18144,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -18088,7 +18318,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -18167,7 +18397,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -18219,7 +18449,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -18232,14 +18462,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -18260,6 +18490,29 @@
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -18361,12 +18614,12 @@
         }
       }
     },
-    "net6.0-ios15.4/android-x86": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+    "net6.0-ios16.0/android-x86": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -18380,11 +18633,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -18397,16 +18650,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -18419,13 +18672,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -18439,14 +18692,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -18460,21 +18713,21 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -18483,7 +18736,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -18657,7 +18910,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -18736,7 +18989,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -18788,7 +19041,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -18801,14 +19054,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -18829,6 +19082,29 @@
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -18930,12 +19206,12 @@
         }
       }
     },
-    "net6.0-ios15.4/iossimulator-x64": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+    "net6.0-ios16.0/iossimulator-x64": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -18949,11 +19225,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -18966,16 +19242,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -18988,13 +19264,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -19008,14 +19284,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -19029,21 +19305,21 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -19052,7 +19328,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -19226,7 +19502,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -19305,7 +19581,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -19357,7 +19633,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -19370,14 +19646,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -19398,6 +19674,29 @@
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -19499,12 +19798,12 @@
         }
       }
     },
-    "net6.0-ios15.4/maccatalyst-x64": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+    "net6.0-ios16.0/maccatalyst-x64": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -19518,11 +19817,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -19535,16 +19834,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -19557,13 +19856,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -19577,14 +19876,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -19598,21 +19897,21 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
+          "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -19621,7 +19920,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -19795,7 +20094,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -19874,7 +20173,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -19926,7 +20225,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -19939,14 +20238,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -19967,6 +20266,29 @@
           "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -20069,11 +20391,11 @@
       }
     },
     "net6.0-maccatalyst15.4": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -20087,11 +20409,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -20104,16 +20426,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -20126,13 +20448,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -20146,14 +20468,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -20167,12 +20489,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
@@ -20190,7 +20512,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -20364,7 +20686,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -20443,7 +20765,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -20495,7 +20817,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -20508,14 +20830,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -20536,6 +20858,29 @@
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -20644,11 +20989,11 @@
       }
     },
     "net6.0-maccatalyst15.4/android-arm": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -20662,11 +21007,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -20679,16 +21024,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -20701,13 +21046,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -20721,14 +21066,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -20742,12 +21087,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
@@ -20765,7 +21110,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -20939,7 +21284,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -21018,7 +21363,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -21070,7 +21415,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -21083,14 +21428,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -21111,6 +21456,29 @@
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -21213,11 +21581,11 @@
       }
     },
     "net6.0-maccatalyst15.4/android-arm64": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -21231,11 +21599,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -21248,16 +21616,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -21270,13 +21638,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -21290,14 +21658,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -21311,12 +21679,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
@@ -21334,7 +21702,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -21508,7 +21876,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -21587,7 +21955,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -21639,7 +22007,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -21652,14 +22020,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -21680,6 +22048,29 @@
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -21782,11 +22173,11 @@
       }
     },
     "net6.0-maccatalyst15.4/android-x64": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -21800,11 +22191,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -21817,16 +22208,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -21839,13 +22230,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -21859,14 +22250,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -21880,12 +22271,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
@@ -21903,7 +22294,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -22077,7 +22468,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -22156,7 +22547,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -22208,7 +22599,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -22221,14 +22612,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -22249,6 +22640,29 @@
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -22351,11 +22765,11 @@
       }
     },
     "net6.0-maccatalyst15.4/android-x86": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -22369,11 +22783,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -22386,16 +22800,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -22408,13 +22822,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -22428,14 +22842,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -22449,12 +22863,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
@@ -22472,7 +22886,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -22646,7 +23060,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -22725,7 +23139,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -22777,7 +23191,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -22790,14 +23204,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -22818,6 +23232,29 @@
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -22920,11 +23357,11 @@
       }
     },
     "net6.0-maccatalyst15.4/iossimulator-x64": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -22938,11 +23375,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -22955,16 +23392,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -22977,13 +23414,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -22997,14 +23434,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -23018,12 +23455,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
@@ -23041,7 +23478,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -23215,7 +23652,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -23294,7 +23731,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -23346,7 +23783,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -23359,14 +23796,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -23387,6 +23824,29 @@
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -23489,11 +23949,11 @@
       }
     },
     "net6.0-maccatalyst15.4/maccatalyst-x64": {
-      "Microsoft.AspNetCore.Authorization/6.0.7": {
+      "Microsoft.AspNetCore.Authorization/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.AspNetCore.Metadata": "6.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "compile": {
@@ -23507,11 +23967,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/6.0.7": {
+      "Microsoft.AspNetCore.Components/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "6.0.7"
+          "Microsoft.AspNetCore.Authorization": "6.0.9",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
@@ -23524,16 +23984,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7"
+          "Microsoft.AspNetCore.Components": "6.0.9"
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -23546,13 +24006,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.7": {
+      "Microsoft.AspNetCore.Components.Web/6.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.7",
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.9",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.JSInterop": "6.0.9",
           "System.IO.Pipelines": "6.0.3"
         },
         "compile": {
@@ -23566,14 +24026,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView/6.0.7": {
+      "Microsoft.AspNetCore.Components.WebView/6.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "6.0.7",
+          "Microsoft.AspNetCore.Components.Web": "6.0.8",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.7",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.8",
           "Microsoft.Extensions.Logging": "6.0.0"
         },
         "compile": {
@@ -23587,12 +24047,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.7",
-          "Microsoft.AspNetCore.Components.WebView": "6.0.7",
-          "Microsoft.JSInterop": "6.0.7",
+          "Microsoft.AspNetCore.Authorization": "6.0.8",
+          "Microsoft.AspNetCore.Components.WebView": "6.0.8",
+          "Microsoft.JSInterop": "6.0.8",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         },
         "compile": {
@@ -23610,7 +24070,7 @@
           "build/Microsoft.AspNetCore.Components.WebView.Maui.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.7": {
+      "Microsoft.AspNetCore.Metadata/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -23784,7 +24244,7 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
@@ -23863,7 +24323,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -23915,7 +24375,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.JSInterop/6.0.7": {
+      "Microsoft.JSInterop/6.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
@@ -23928,14 +24388,14 @@
           }
         }
       },
-      "Microsoft.Maui.Dependencies/6.0.540": {
+      "Microsoft.Maui.Dependencies/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Graphics": "6.0.501",
           "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
         }
       },
-      "Microsoft.Maui.Extensions/6.0.540": {
+      "Microsoft.Maui.Extensions/6.0.541": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -23956,6 +24416,29 @@
           "lib/net6.0-maccatalyst13.5/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "MudBlazor/6.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -24077,10 +24560,10 @@
         "lib/net6.0-android31.0/GoogleGson.xml"
       ]
     },
-    "Microsoft.AspNetCore.Authorization/6.0.7": {
-      "sha512": "tFVhR/obKzKWKT359cF+jEm2Bs2ytWwAkDwj0CsPwXIKkTZENSmgGP3pAkKW8vf+4RSFZNUYNt8s9OGTVfgBqA==",
+    "Microsoft.AspNetCore.Authorization/6.0.9": {
+      "sha512": "paH0Zgo6yWMhVwaWZ0wqyY5az7zv89C5AlRfrpAAjAyKLvgBuTIQIK9kPSIGAoOhvt56fxcDTLws3cckauWOWw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authorization/6.0.7",
+      "path": "microsoft.aspnetcore.authorization/6.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24092,14 +24575,14 @@
         "lib/net6.0/Microsoft.AspNetCore.Authorization.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
-        "microsoft.aspnetcore.authorization.6.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.6.0.9.nupkg.sha512",
         "microsoft.aspnetcore.authorization.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components/6.0.7": {
-      "sha512": "1OkW1RCpDte29hc74ZMpBqlzGg19yRsvDRayCnLddxjX37dA48d5sur4sVmJ+fqIV51rvTYJX1conaNoA9grDA==",
+    "Microsoft.AspNetCore.Components/6.0.9": {
+      "sha512": "ueQkgDVg30fWLRrHiK/yaDEH2J8UUZ8+5KykWTupiHoLxHBcdx60lxelmJWrLzHsiA/1aoZMhPF2r5sGDPd8nw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components/6.0.7",
+      "path": "microsoft.aspnetcore.components/6.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24107,14 +24590,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net6.0/Microsoft.AspNetCore.Components.dll",
         "lib/net6.0/Microsoft.AspNetCore.Components.xml",
-        "microsoft.aspnetcore.components.6.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.components.6.0.9.nupkg.sha512",
         "microsoft.aspnetcore.components.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Analyzers/6.0.7": {
-      "sha512": "9xNHguX3r0S9f5BIZxtOVe2HlL4xJlRRxHmRGT2RotyiKGwV2jLp6v8+ZR4XtblSC2MCAKQ0NlSo2NvI8Yesyw==",
+    "Microsoft.AspNetCore.Components.Analyzers/6.0.9": {
+      "sha512": "yVI41+FbLzNhBUEPWNTEwFCz3+JkzCfiD1K+8MLFa66+yDSDWBUbzXtTxzVb2I8RstANXalR/6BFUvmdYjruAQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.analyzers/6.0.7",
+      "path": "microsoft.aspnetcore.components.analyzers/6.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24123,14 +24606,14 @@
         "analyzers/dotnet/cs/Microsoft.AspNetCore.Components.Analyzers.dll",
         "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
         "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
-        "microsoft.aspnetcore.components.analyzers.6.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.components.analyzers.6.0.9.nupkg.sha512",
         "microsoft.aspnetcore.components.analyzers.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Forms/6.0.7": {
-      "sha512": "aV4hfSGvysPDyF5oGsMOzlCqdKmDv0MdMEDDb6Yef6Ky0rpcDBY9rPLGBy2q3wv5Y8B5zUnbtMRJYFDEenfPIA==",
+    "Microsoft.AspNetCore.Components.Forms/6.0.9": {
+      "sha512": "uPFeDc3Ur8lReE6J5k+8Y+8xIhXiUHKBB3w2IV37bBh2vOSTpoMq9RkcKC8omeulqGRD4iPyzGxEA7OIIXqC0A==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.forms/6.0.7",
+      "path": "microsoft.aspnetcore.components.forms/6.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24138,14 +24621,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll",
         "lib/net6.0/Microsoft.AspNetCore.Components.Forms.xml",
-        "microsoft.aspnetcore.components.forms.6.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.components.forms.6.0.9.nupkg.sha512",
         "microsoft.aspnetcore.components.forms.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Web/6.0.7": {
-      "sha512": "UVGBTzlK1BkfHLvo2ej84xlvpROnY1jvAn6OgIc5ksSSwSY0LPCRAo4Lejk0LvGFtiSYhinKJZfp5QNtjbUl5w==",
+    "Microsoft.AspNetCore.Components.Web/6.0.9": {
+      "sha512": "fNb8IGYDYYaWrt20ObNhwXkh5AhYyiphrIZDpNegvbtLtlJMsz2OaJztgpVDGNLmb7x20TQ3GlnGQiqHChcmeA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.web/6.0.7",
+      "path": "microsoft.aspnetcore.components.web/6.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24153,14 +24636,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll",
         "lib/net6.0/Microsoft.AspNetCore.Components.Web.xml",
-        "microsoft.aspnetcore.components.web.6.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.components.web.6.0.9.nupkg.sha512",
         "microsoft.aspnetcore.components.web.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.WebView/6.0.7": {
-      "sha512": "5FAcjCE/9hgEfpWFgdVmopYOQOOsnZP1v5uJDmsqzhGh+wkau/exsYx61+LDmfgm4giPwPgVUWonr73Hm8I/Ig==",
+    "Microsoft.AspNetCore.Components.WebView/6.0.8": {
+      "sha512": "br7yXk5155D8sqq0geaJRaijXhM2JACukV43YNlB58db38KPvUURwPIJNFLE/ZuZS+7FxKqydTchPUXKSI9Hqg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.webview/6.0.7",
+      "path": "microsoft.aspnetcore.components.webview/6.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24169,14 +24652,14 @@
         "buildTransitive/any/Microsoft.AspNetCore.Components.WebView.props",
         "lib/net6.0/Microsoft.AspNetCore.Components.WebView.dll",
         "lib/net6.0/Microsoft.AspNetCore.Components.WebView.xml",
-        "microsoft.aspnetcore.components.webview.6.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.components.webview.6.0.8.nupkg.sha512",
         "microsoft.aspnetcore.components.webview.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.WebView.Maui/6.0.540": {
-      "sha512": "7iSs5QjjOxWonl7EGXCpnGiXokB1vGhzgTIegBJFZ0DDUmec68DCwc/Pi3AgnhTG6Gqf/tbQn0TutEs8vHL4EQ==",
+    "Microsoft.AspNetCore.Components.WebView.Maui/6.0.541": {
+      "sha512": "nvSHNKSUva+8pwCK6dT1iNiQgZ/Qt1j255DKN2Cn2LoWWoX/t2PTLgIGKEB9Sww+iLr7C3m7Ro4urr0cJNS1/g==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.webview.maui/6.0.540",
+      "path": "microsoft.aspnetcore.components.webview.maui/6.0.541",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24185,9 +24668,9 @@
         "lib/net6.0-android31.0/Microsoft.AspNetCore.Components.WebView.Maui.dll",
         "lib/net6.0-android31.0/Microsoft.AspNetCore.Components.WebView.Maui.pdb",
         "lib/net6.0-android31.0/Microsoft.AspNetCore.Components.WebView.Maui.xml",
-        "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll",
-        "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.pdb",
-        "lib/net6.0-ios15.4/Microsoft.AspNetCore.Components.WebView.Maui.xml",
+        "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.dll",
+        "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.pdb",
+        "lib/net6.0-ios16.0/Microsoft.AspNetCore.Components.WebView.Maui.xml",
         "lib/net6.0-maccatalyst15.4/Microsoft.AspNetCore.Components.WebView.Maui.dll",
         "lib/net6.0-maccatalyst15.4/Microsoft.AspNetCore.Components.WebView.Maui.pdb",
         "lib/net6.0-maccatalyst15.4/Microsoft.AspNetCore.Components.WebView.Maui.xml",
@@ -24203,14 +24686,14 @@
         "lib/net6.0/Microsoft.AspNetCore.Components.WebView.Maui.dll",
         "lib/net6.0/Microsoft.AspNetCore.Components.WebView.Maui.pdb",
         "lib/net6.0/Microsoft.AspNetCore.Components.WebView.Maui.xml",
-        "microsoft.aspnetcore.components.webview.maui.6.0.540.nupkg.sha512",
+        "microsoft.aspnetcore.components.webview.maui.6.0.541.nupkg.sha512",
         "microsoft.aspnetcore.components.webview.maui.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Metadata/6.0.7": {
-      "sha512": "lRYA9dAPRhstA1x9RN0Y7O+28SeIwjASRL64mtuAb4Lywe7GykgFM2sK4cDrNedCOiCt2R6FretfNGjFeP9pRA==",
+    "Microsoft.AspNetCore.Metadata/6.0.9": {
+      "sha512": "cQET2vOT72zW+kOd71KQE80qBSQJEnWs86HfJEZPzHgTfn/o5UyzHHRosP1EQX8iPQ9ESxmd+AJedggkSxN93Q==",
       "type": "package",
-      "path": "microsoft.aspnetcore.metadata/6.0.7",
+      "path": "microsoft.aspnetcore.metadata/6.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24222,7 +24705,7 @@
         "lib/net6.0/Microsoft.AspNetCore.Metadata.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
-        "microsoft.aspnetcore.metadata.6.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.metadata.6.0.9.nupkg.sha512",
         "microsoft.aspnetcore.metadata.nuspec"
       ]
     },
@@ -24415,10 +24898,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.FileProviders.Embedded/6.0.7": {
-      "sha512": "VvVTvV/OTZ9U5CG0mhIcDODJPTODDzN9mNJAxw27sKUu1exT+qREeWmoGnH+b96kZMj0gDwqNw6c2If045dUXA==",
+    "Microsoft.Extensions.FileProviders.Embedded/6.0.8": {
+      "sha512": "zvo02Hq4wHBBGOTUMPY0bQ9vn7KBIOBGEm91fD1kcjThRwbJiv1lVDlhcYhveou5JmAze7+SJzSlmb2iL4+3Tw==",
       "type": "package",
-      "path": "microsoft.extensions.fileproviders.embedded/6.0.7",
+      "path": "microsoft.extensions.fileproviders.embedded/6.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24433,7 +24916,7 @@
         "lib/net6.0/Microsoft.Extensions.FileProviders.Embedded.xml",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.xml",
-        "microsoft.extensions.fileproviders.embedded.6.0.7.nupkg.sha512",
+        "microsoft.extensions.fileproviders.embedded.6.0.8.nupkg.sha512",
         "microsoft.extensions.fileproviders.embedded.nuspec",
         "tasks/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.Manifest.Task.dll"
       ]
@@ -24505,10 +24988,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
-      "sha512": "dzB2Cgg+JmrouhjkcQGzSFjjvpwlq353i8oBQO2GWNjCXSzhbtBRUf28HSauWe7eib3wYOdb3tItdjRwAdwCSg==",
+    "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
+      "sha512": "pwXCZKaA7m5wgmCj49dW+H1RPSY7U62SKLTQYCcavf/k3Nyt/WnBgAjG4jMGnwy9rElfAZ2KvxvM5CJzJWG0hg==",
       "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/6.0.1",
+      "path": "microsoft.extensions.logging.abstractions/6.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24552,7 +25035,7 @@
         "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.6.0.2.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -24603,10 +25086,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.JSInterop/6.0.7": {
-      "sha512": "tnlXRE82H1zPFlOlGJDXOtCiPMqXDxdGVeM1YIDt4iS6qEsDtTtGJP6Zh01Qp1eJzsyfYyzsBFmwvkU4mTIbwQ==",
+    "Microsoft.JSInterop/6.0.9": {
+      "sha512": "6SRDR3QEhnT3WuNittrXn0yKM2a2J7E22GAdSuKzC8tPcAjA25tHJeyFcRIJFZBmsIE0tuJzXopLrvG4sTacAg==",
       "type": "package",
-      "path": "microsoft.jsinterop/6.0.7",
+      "path": "microsoft.jsinterop/6.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -24614,29 +25097,29 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net6.0/Microsoft.JSInterop.dll",
         "lib/net6.0/Microsoft.JSInterop.xml",
-        "microsoft.jsinterop.6.0.7.nupkg.sha512",
+        "microsoft.jsinterop.6.0.9.nupkg.sha512",
         "microsoft.jsinterop.nuspec"
       ]
     },
-    "Microsoft.Maui.Dependencies/6.0.540": {
-      "sha512": "GDclDzRHv+JXD1N2FAsUYYbAlXYfNXK7FRD51+aP05Eoj8+ioV35ewO5WLviP+Tdq4U4iTBpSYdCbPU4Eytp2w==",
+    "Microsoft.Maui.Dependencies/6.0.541": {
+      "sha512": "9QJGkpTcPhZHrDmWfxoSUJjjCRLt0IpLz0NSKUqpWTj4D8UbOqrOKIOCO3duyc5xQ2J4mTgzA7H7zdzWZfrdBg==",
       "type": "package",
-      "path": "microsoft.maui.dependencies/6.0.540",
+      "path": "microsoft.maui.dependencies/6.0.541",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "microsoft.maui.dependencies.6.0.540.nupkg.sha512",
+        "microsoft.maui.dependencies.6.0.541.nupkg.sha512",
         "microsoft.maui.dependencies.nuspec"
       ]
     },
-    "Microsoft.Maui.Extensions/6.0.540": {
-      "sha512": "JaP6yjIyWlClH/5U+NAINBw6RdjbkL78CaiVBu57rvV82K39302et6HWpXNzWQh0ciQy9+bm32jjwSqKXhQ77g==",
+    "Microsoft.Maui.Extensions/6.0.541": {
+      "sha512": "Hpj5ao4T92gb2nEfpqsSOoJmsyP0i+29gpF+mZEa8QjAiwfvN5C1ZckYJY9k8Ir5nqYIjMvHgkwUh6CuR6Ui/w==",
       "type": "package",
-      "path": "microsoft.maui.extensions/6.0.540",
+      "path": "microsoft.maui.extensions/6.0.541",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "microsoft.maui.extensions.6.0.540.nupkg.sha512",
+        "microsoft.maui.extensions.6.0.541.nupkg.sha512",
         "microsoft.maui.extensions.nuspec"
       ]
     },
@@ -24671,6 +25154,27 @@
         "lib/xamarin.mac20/Microsoft.Maui.Graphics.pdb",
         "microsoft.maui.graphics.6.0.501.nupkg.sha512",
         "microsoft.maui.graphics.nuspec"
+      ]
+    },
+    "MudBlazor/6.0.17": {
+      "sha512": "YJQHHw6uCYGmmBuzwTdanOSqyLfZc7UKLp6Lprzz3Mb558TzgwdOlEvLE/YS93uay88JuMoU4xRDMcLaGguQCA==",
+      "type": "package",
+      "path": "mudblazor/6.0.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "Nuget.png",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/MudBlazor.props",
+        "buildMultiTargeting/MudBlazor.props",
+        "buildTransitive/MudBlazor.props",
+        "lib/net6.0/MudBlazor.dll",
+        "lib/net6.0/MudBlazor.xml",
+        "mudblazor.6.0.17.nupkg.sha512",
+        "mudblazor.nuspec",
+        "staticwebassets/MudBlazor.min.css",
+        "staticwebassets/MudBlazor.min.js"
       ]
     },
     "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -26703,38 +27207,41 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-android31.0": [
-      "Microsoft.AspNetCore.Components.WebView.Maui >= 6.0.540",
-      "Microsoft.Maui.Dependencies >= 6.0.540",
-      "Microsoft.Maui.Extensions >= 6.0.540"
+      "Microsoft.AspNetCore.Components.WebView.Maui >= 6.0.541",
+      "Microsoft.Maui.Dependencies >= 6.0.541",
+      "Microsoft.Maui.Extensions >= 6.0.541",
+      "MudBlazor >= 6.0.17"
     ],
-    "net6.0-ios15.4": [
-      "Microsoft.AspNetCore.Components.WebView.Maui >= 6.0.540",
-      "Microsoft.Maui.Dependencies >= 6.0.540",
-      "Microsoft.Maui.Extensions >= 6.0.540",
+    "net6.0-ios16.0": [
+      "Microsoft.AspNetCore.Components.WebView.Maui >= 6.0.541",
+      "Microsoft.Maui.Dependencies >= 6.0.541",
+      "Microsoft.Maui.Extensions >= 6.0.541",
+      "MudBlazor >= 6.0.17",
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1"
     ],
     "net6.0-maccatalyst15.4": [
-      "Microsoft.AspNetCore.Components.WebView.Maui >= 6.0.540",
-      "Microsoft.Maui.Dependencies >= 6.0.540",
-      "Microsoft.Maui.Extensions >= 6.0.540",
+      "Microsoft.AspNetCore.Components.WebView.Maui >= 6.0.541",
+      "Microsoft.Maui.Dependencies >= 6.0.541",
+      "Microsoft.Maui.Extensions >= 6.0.541",
+      "MudBlazor >= 6.0.17",
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1"
     ]
   },
   "packageFolders": {
-    "/Users/jackwalton/.nuget/packages/": {}
+    "/Users/carter/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jackwalton/Projects/sportsapp/SportsApp/SportsApp.csproj",
+      "projectUniqueName": "/Users/carter/Projects/sportsapp/SportsApp/SportsApp.csproj",
       "projectName": "SportsApp",
-      "projectPath": "/Users/jackwalton/Projects/sportsapp/SportsApp/SportsApp.csproj",
-      "packagesPath": "/Users/jackwalton/.nuget/packages/",
-      "outputPath": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/",
+      "projectPath": "/Users/carter/Projects/sportsapp/SportsApp/SportsApp.csproj",
+      "packagesPath": "/Users/carter/.nuget/packages/",
+      "outputPath": "/Users/carter/Projects/sportsapp/SportsApp/obj/",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
-        "/Users/jackwalton/.nuget/NuGet/NuGet.Config"
+        "/Users/carter/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0-android",
@@ -26750,7 +27257,7 @@
           "targetAlias": "net6.0-android",
           "projectReferences": {}
         },
-        "net6.0-ios15.4": {
+        "net6.0-ios16.0": {
           "targetAlias": "net6.0-ios",
           "projectReferences": {}
         },
@@ -26771,18 +27278,22 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
-            "version": "[6.0.540, )",
+            "version": "[6.0.541, )",
             "autoReferenced": true
           },
           "Microsoft.Maui.Dependencies": {
             "target": "Package",
-            "version": "[6.0.540, )",
+            "version": "[6.0.541, )",
             "autoReferenced": true
           },
           "Microsoft.Maui.Extensions": {
             "target": "Package",
-            "version": "[6.0.540, )",
+            "version": "[6.0.541, )",
             "autoReferenced": true
+          },
+          "MudBlazor": {
+            "target": "Package",
+            "version": "[6.0.17, )"
           }
         },
         "imports": [
@@ -26798,26 +27309,6 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.Android.Ref.31",
-            "version": "[32.0.465, 32.0.465]"
-          },
-          {
-            "name": "Microsoft.Android.Runtime.31.android-arm",
-            "version": "[32.0.465, 32.0.465]"
-          },
-          {
-            "name": "Microsoft.Android.Runtime.31.android-arm64",
-            "version": "[32.0.465, 32.0.465]"
-          },
-          {
-            "name": "Microsoft.Android.Runtime.31.android-x64",
-            "version": "[32.0.465, 32.0.465]"
-          },
-          {
-            "name": "Microsoft.Android.Runtime.31.android-x86",
-            "version": "[32.0.465, 32.0.465]"
-          },
-          {
             "name": "Microsoft.AspNetCore.App.Runtime.linux-arm",
             "version": "[6.0.10, 6.0.10]"
           },
@@ -26828,30 +27319,6 @@
           {
             "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
             "version": "[6.0.10, 6.0.10]"
-          },
-          {
-            "name": "Microsoft.Maui.Controls.Ref.android",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Controls.Runtime.android",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Core.Ref.android",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Core.Runtime.android",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Essentials.Ref.android",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Essentials.Runtime.android",
-            "version": "[6.0.540, 6.0.540]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.android-arm64",
@@ -26877,23 +27344,27 @@
         },
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100-rc.2.22477.23/RuntimeIdentifierGraph.json"
       },
-      "net6.0-ios15.4": {
+      "net6.0-ios16.0": {
         "targetAlias": "net6.0-ios",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
-            "version": "[6.0.540, )",
+            "version": "[6.0.541, )",
             "autoReferenced": true
           },
           "Microsoft.Maui.Dependencies": {
             "target": "Package",
-            "version": "[6.0.540, )",
+            "version": "[6.0.541, )",
             "autoReferenced": true
           },
           "Microsoft.Maui.Extensions": {
             "target": "Package",
-            "version": "[6.0.540, )",
+            "version": "[6.0.541, )",
             "autoReferenced": true
+          },
+          "MudBlazor": {
+            "target": "Package",
+            "version": "[6.0.17, )"
           },
           "System.Runtime.InteropServices.NFloat.Internal": {
             "target": "Package",
@@ -26915,35 +27386,11 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.iOS.Ref",
-            "version": "[15.4.454, 15.4.454]"
+            "version": "[16.0.523, 16.0.523]"
           },
           {
             "name": "Microsoft.iOS.Runtime.iossimulator-x64",
-            "version": "[15.4.454, 15.4.454]"
-          },
-          {
-            "name": "Microsoft.Maui.Controls.Ref.ios",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Controls.Runtime.ios",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Core.Ref.ios",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Core.Runtime.ios",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Essentials.Ref.ios",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Essentials.Runtime.ios",
-            "version": "[6.0.540, 6.0.540]"
+            "version": "[16.0.523, 16.0.523]"
           }
         ],
         "frameworkReferences": {
@@ -26970,18 +27417,22 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
-            "version": "[6.0.540, )",
+            "version": "[6.0.541, )",
             "autoReferenced": true
           },
           "Microsoft.Maui.Dependencies": {
             "target": "Package",
-            "version": "[6.0.540, )",
+            "version": "[6.0.541, )",
             "autoReferenced": true
           },
           "Microsoft.Maui.Extensions": {
             "target": "Package",
-            "version": "[6.0.540, )",
+            "version": "[6.0.541, )",
             "autoReferenced": true
+          },
+          "MudBlazor": {
+            "target": "Package",
+            "version": "[6.0.17, )"
           },
           "System.Runtime.InteropServices.NFloat.Internal": {
             "target": "Package",
@@ -27001,40 +27452,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.MacCatalyst.Ref",
-            "version": "[15.4.454, 15.4.454]"
-          },
-          {
-            "name": "Microsoft.MacCatalyst.Runtime.maccatalyst-x64",
-            "version": "[15.4.454, 15.4.454]"
-          },
-          {
-            "name": "Microsoft.Maui.Controls.Ref.maccatalyst",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Controls.Runtime.maccatalyst",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Core.Ref.maccatalyst",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Core.Runtime.maccatalyst",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Essentials.Ref.maccatalyst",
-            "version": "[6.0.540, 6.0.540]"
-          },
-          {
-            "name": "Microsoft.Maui.Essentials.Runtime.maccatalyst",
-            "version": "[6.0.540, 6.0.540]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.MacCatalyst": {
             "privateAssets": "all"
