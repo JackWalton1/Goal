@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eUUTvX+8I3LRWNLdhaJ9OoqCTbDHVHgS54g6MykNmOo=",
+  "Hash": "gFm/D0WplupQylgcD+/adz00wcol4xYpOSWFn9FAbA0=",
   "Source": "SportsApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-android/scopedcss/projectbundle/SportsApp.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/.DS_Store",
+      "SourceId": "SportsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
       "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/app.css",
@@ -270,6 +287,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/goal_logo.png",
+      "SourceId": "SportsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "Images/goal_logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/goal_logo.png"
     },
     {
       "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/index.html",

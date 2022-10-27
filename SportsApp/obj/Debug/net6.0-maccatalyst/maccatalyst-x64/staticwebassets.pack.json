@@ -9,6 +9,22 @@
       "PackagePath": "staticwebassets/.DS_Store"
     },
     {
+      "Id": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/goal.jpg",
+      "PackagePath": "staticwebassets/Images/goal.jpg"
+    },
+    {
+      "Id": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/goal_logo.png",
+      "PackagePath": "staticwebassets/Images/goal_logo.png"
+    },
+    {
+      "Id": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/image_template1.jpg",
+      "PackagePath": "staticwebassets/Images/image_template1.jpg"
+    },
+    {
+      "Id": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/image_template2.jpg",
+      "PackagePath": "staticwebassets/Images/image_template2.jpg"
+    },
+    {
       "Id": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/app.css",
       "PackagePath": "staticwebassets/css/app.css"
     },
