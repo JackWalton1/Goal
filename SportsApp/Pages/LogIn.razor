@@ -1,8 +1,41 @@
 ﻿@page "/login"
 
-<h1>test</h1>
-<img src="Images/goal_logo.png"/>
+<MudGrid Spacing="2" Justify="Justify.Center" >
+    <MudItem xs="12">
+        <MudContainer Class="d-flex justify-center align-center">
+            <MudImage ObjectPosition.Center src="Images/goal.jpg" Alt="goal logo" Width="200" />
+        </MudContainer>
+    </MudItem>
+    <MudItem xs="12">
+        <MudContainer Class="d-flex justify-center align-center">
+            <MudTextField @bind-Value="TextValue" Label="username" Variant="Variant.Outlined"></MudTextField>
+        </MudContainer>
+    </MudItem>
+    <MudItem xs="12">
+        <MudContainer Class="d-flex justify-center align-center">
+            <MudTextField @bind-Value="TextValue" Label="password" Variant="Variant.Outlined"></MudTextField>
+        </MudContainer>
+    </MudItem>
+    <MudItem xs="12">
+        <MudContainer Class="d-flex justify-center align-center">
+            <MudButton Variant="Variant.Filled">log in</MudButton>
+        </MudContainer>
+    </MudItem>
+    <MudItem xs="12">
+        <MudContainer Class="d-flex justify-center align-center">
+            <MudBlazor.MudText Typo="Typo.subtitle1">not registered? create account</MudBlazor.MudText>
+            <MudIconButton Icon="@Icons.Filled.ArrowForwardIos" aria-label="create account"></MudIconButton>
+        </MudContainer>
+    </MudItem>
+    <MudItem xs="12">
+        <MudContainer Class="d-flex justify-center align-center">
+            <MudBlazor.MudText Typo="Typo.subtitle1">continue without logging in</MudBlazor.MudText>
+            <MudIconButton Icon="@Icons.Filled.ArrowForwardIos" aria-label="continue without login"></MudIconButton>
+        </MudContainer>
+    </MudItem>
+</MudGrid>
 
 @code {
-
+    public string TextValue { get; set; }
+    public int spacing { get; set; } = 2;
 }
