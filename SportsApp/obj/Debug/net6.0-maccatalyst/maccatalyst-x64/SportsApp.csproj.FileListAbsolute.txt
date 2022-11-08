@@ -850,11 +850,5 @@
 /Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/SportsApp.pdb
 /Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/SportsApp.genruntimeconfig.cache
 /Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/ref/SportsApp.dll
-/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/image_template1.png
-/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/image_template1@2x.png
-/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/image_template1@3x.png
-/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/image_template2.png
-/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/image_template2@2x.png
-/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/image_template2@3x.png
 /Users/carter/Projects/sportsapp/SportsApp/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/MudBlazor.dll
 /Users/jackwalton/Projects/sportsapp/SportsApp/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/MudBlazor.dll
