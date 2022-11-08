@@ -1,0 +1,33 @@
+﻿@using System.ComponentModel.DataAnnotations
+@page "/createEvent"
+
+<MudText Typo="Typo.h3" Align="Align.Center">Edit Event Details</MudText>
+<MudText Align="Align.Center">Edit event details below.</MudText>
+
+<MudCard>
+    <MudForm>
+        <MudCardContent>
+            <MudTextField For="@(() => model.String)" Label="Event Title" />
+            <MudTextField For="@(() => model.String)" Label="Event Description" />
+            <MudDatePicker For="@(() => model.Date)" Label="Date" />            
+        </MudCardContent>
+    </MudForm>
+    <MudCardActions>
+        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Create Event</MudButton>
+    </MudCardActions>
+</MudCard>
+
+@code {
+    DisplayNameLabelClass model = new();
+
+    public class DisplayNameLabelClass
+    {
+        [Label("Date LabelAttribute")]
+        public DateTime? Date { get; set; }
+        [Label("Boolean LabelAttribute")]
+        public bool Boolean { get; set; }
+        [Label("String LabelAttribute")]
+        public string String { get; set; }
+    }
+
+}
