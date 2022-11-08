@@ -2,20 +2,19 @@
 
 <MudStack>
     <MudPaper Class="pa-4">
-        <MudStack Row="true">
-            <MudAvatar Image="images/mony.jpg" Size="Size.Large" />
+        <MudContainer Class="d-flex justify-center align-center">
             <MudStack Justify="Justify.Center" Spacing="0">
-                <MudText Typo="Typo.body1">jane doe</MudText>
-                <MudText Typo="Typo.body2">rome, italy</MudText>
+                <MudImage src="Images/profile_image.png"/>
+                <MudText Align="Align.Center" Typo="Typo.h3">jane doe</MudText>
+                <MudText Align="Align.Center" Typo="Typo.subtitle1">Rome, Italy</MudText>
             </MudStack>
-        </MudStack>
+        </MudContainer>
     </MudPaper>
 
-    <MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">view what you're following</MudButton>
-    <MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">view your tickets</MudButton>
-    <MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">pay membership fees</MudButton>
-    <MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">edit profile and location</MudButton>
-
+    <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">view what you're following</MudButton>
+    <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">view your tickets</MudButton>
+    <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">pay membership fees</MudButton>
+    <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">edit profile and location</MudButton>
 </MudStack>
 
 @code {
