@@ -1,12 +1,13 @@
 ﻿@page "/eventNotifications"
-@*<MudText Typo="Typo.h3" Align="Align.Center">Add event notifications</MudText>
-    <MudText Align="Align.Center">Add event notifications below.</MudText>*@
 
 <MudStack Spacing="8">
     <MudItem>
         <MudText Typo="Typo.h3" Align="Align.Center">Add event notifications</MudText>
         <MudText Align="Align.Center">Add event notifications below.</MudText>
     </MudItem>
+    <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Notify me for all below events</MudButton>
+    <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Notify me for a specific upcoming event</MudButton>
+    <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Notify me for recommended events</MudButton>
     <MudStack Spacing="4">
         <MudText Typo="Typo.h4" Align="Align.Left">Your upcoming events</MudText>
         <MudStack Row="true">
@@ -21,8 +22,4 @@
         </MudStack>
     </MudStack>
 </MudStack>
-
-<MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Notify me for all</MudButton>
-<MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Notify me for upcoming event</MudButton>
-<MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Notify me for reccomended events</MudButton>
 
