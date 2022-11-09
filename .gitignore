@@ -11,6 +11,14 @@ autom4te.cache/
 tarballs/
 test-results/
 
+# Added ignores
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
+
 # Mac bundle stuff
 *.dmg
 *.app
