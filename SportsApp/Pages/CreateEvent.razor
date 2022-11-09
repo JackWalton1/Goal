@@ -1,21 +1,24 @@
 ﻿@using System.ComponentModel.DataAnnotations
 @page "/createEvent"
 
-<MudText Typo="Typo.h3" Align="Align.Center">Create event</MudText>
-<MudText Align="Align.Center">Upload a new event below.</MudText>
-
-<MudCard>
-    <MudForm>
-        <MudCardContent>
-            <MudTextField For="@(() => model.String)" Label="Event Title" />
-            <MudTextField For="@(() => model.String)" Label="Event Description" />
-            <MudDatePicker For="@(() => model.Date)" Label="Date" />            
-        </MudCardContent>
-    </MudForm>
-    <MudCardActions>
-        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Create Event</MudButton>
-    </MudCardActions>
-</MudCard>
+<MudStack Spacing="4">
+    <MudItem>
+        <MudText Typo="Typo.h3" Align="Align.Center">Create event</MudText>
+        <MudText Align="Align.Center">Upload a new event below.</MudText>
+    </MudItem>
+    <MudCard>
+        <MudForm>
+            <MudCardContent>
+                <MudTextField For="@(() => model.String)" Label="Event Title" />
+                <MudTextField For="@(() => model.String)" Label="Event Description" />
+                <MudDatePicker For="@(() => model.Date)" Label="Date" />
+            </MudCardContent>
+        </MudForm>
+        <MudCardActions>
+            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Create Event</MudButton>
+        </MudCardActions>
+    </MudCard>
+</MudStack>
 
 @code {
     DisplayNameLabelClass model = new();

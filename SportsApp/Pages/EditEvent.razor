@@ -1,21 +1,24 @@
 ﻿@using System.ComponentModel.DataAnnotations
 @page "/editEvent"
 
-<MudText Typo="Typo.h3" Align="Align.Center">Edit event details</MudText>
-<MudText Align="Align.Center">Edit event details below.</MudText>
-
-<MudCard>
-    <MudForm>
-        <MudCardContent>
-            <MudTextField For="@(() => model.String)" Label="Event Title" />
-            <MudTextField For="@(() => model.String)" Label="Event Description" />
-            <MudDatePicker For="@(() => model.Date)" Label="Date" />            
-        </MudCardContent>
-    </MudForm>
-    <MudCardActions>
-        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Submit Changes</MudButton>
-    </MudCardActions>
-</MudCard>
+<MudStack Spacing="4">
+    <MudItem>
+        <MudText Typo="Typo.h3" Align="Align.Center">Edit event details</MudText>
+        <MudText Align="Align.Center">Edit event details below.</MudText>
+    </MudItem>
+    <MudCard>
+        <MudForm>
+            <MudCardContent>
+                <MudTextField For="@(() => model.String)" Label="Event Title" />
+                <MudTextField For="@(() => model.String)" Label="Event Description" />
+                <MudDatePicker For="@(() => model.Date)" Label="Date" />
+            </MudCardContent>
+        </MudForm>
+        <MudCardActions>
+            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Submit Changes</MudButton>
+        </MudCardActions>
+    </MudCard>
+</MudStack>
 
 @code {
     DisplayNameLabelClass model = new();
