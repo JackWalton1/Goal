@@ -16,14 +16,15 @@
         <MudPaper Class="d-inline-flex pa-4">
             I am a regular user
         </MudPaper>*@
-        <MudButton Align="center" Variant="Variant.Filled">create account</MudButton>
-        <MudButton Align="center" Size="Size.Large" Href="/login" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true" OnClick="startConnection">registered before? log in</MudButton>
+        <MudButton Align="center" Variant="Variant.Filled" OnClick="startConnection">create account</MudButton>
+        <MudButton Align="center" Size="Size.Large" Href="/login" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">registered before? log in</MudButton>
         <MudButton Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">continue without logging in</MudButton>
         <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
     </MudStack>
 </MudContainer>
 
 @code {
+
     public string Username { get; set; }
     public string Password { get; set; }
     public string LocationString { get; set; }
@@ -41,10 +42,14 @@
         var collection = db.GetCollection<UserModel>(collectionName);
 
         // Create new UserModel object.
-        var user = new UserModel { Username = Username, Password = Password };
+        var user = new UserModel { Username = Username, Password = Password, LocationString = LocationString };
 
         // Insert UserModel object into MongoDB.
-        await collection.InsertOneAsync(user);
+        if(user.Username != null || user.Password != null || user.LocationString != null)
+        {
+            await collection.InsertOneAsync(user);
+        }
+
 
         // Locate document with Username field equal to "carter2020"
         var results = await collection.FindAsync(document => document.Username == "carter2020");

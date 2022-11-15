@@ -9,8 +9,8 @@
         </MudContainer>
         <MudTextField Align="center" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
         <MudTextField Align="center" @bind-Value="Password" Label="password" Variant="Variant.Outlined"></MudTextField>
-        <MudButton Align="center" Variant="Variant.Filled">log in</MudButton>
-        <MudButton Align="center" Size="Size.Large" Href="/signup" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true" OnClick="startConnection">not registered? create account</MudButton>
+        <MudButton Align="center" Variant="Variant.Filled" OnClick="startConnection">log in</MudButton>
+        <MudButton Align="center" Size="Size.Large" Href="/signup" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">not registered? create account</MudButton>
         <MudButton Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">continue without logging in</MudButton>
         <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
     </MudStack>
