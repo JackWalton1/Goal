@@ -4,27 +4,27 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/jackwalton/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/jackwalton/.nuget/packages/</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/carter/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/carter/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="/Users/jackwalton/.nuget/packages/" />
+    <SourceRoot Include="/Users/carter/.nuget/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == '' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)mudblazor/6.0.17/buildMultiTargeting/MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor/6.0.17/buildMultiTargeting/MudBlazor.props')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)mudblazor/6.0.17/buildTransitive/MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor/6.0.17/buildTransitive/MudBlazor.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.540/build/Microsoft.AspNetCore.Components.WebView.Maui.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.540/build/Microsoft.AspNetCore.Components.WebView.Maui.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.547/build/Microsoft.AspNetCore.Components.WebView.Maui.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.547/build/Microsoft.AspNetCore.Components.WebView.Maui.props')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)mudblazor/6.0.17/buildTransitive/MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor/6.0.17/buildTransitive/MudBlazor.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.540/build/Microsoft.AspNetCore.Components.WebView.Maui.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.540/build/Microsoft.AspNetCore.Components.WebView.Maui.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.547/build/Microsoft.AspNetCore.Components.WebView.Maui.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.547/build/Microsoft.AspNetCore.Components.WebView.Maui.props')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-maccatalyst' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)mudblazor/6.0.17/buildTransitive/MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor/6.0.17/buildTransitive/MudBlazor.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.540/build/Microsoft.AspNetCore.Components.WebView.Maui.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.540/build/Microsoft.AspNetCore.Components.WebView.Maui.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.547/build/Microsoft.AspNetCore.Components.WebView.Maui.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webview.maui/6.0.547/build/Microsoft.AspNetCore.Components.WebView.Maui.props')" />
   </ImportGroup>
 </Project>

@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jackwalton/Projects/sportsapp/SportsApp/SportsApp.csproj": {}
+    "/Users/carter/Projects/sportsapp/SportsApp/SportsApp.csproj": {}
   },
   "projects": {
-    "/Users/jackwalton/Projects/sportsapp/SportsApp/SportsApp.csproj": {
+    "/Users/carter/Projects/sportsapp/SportsApp/SportsApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jackwalton/Projects/sportsapp/SportsApp/SportsApp.csproj",
+        "projectUniqueName": "/Users/carter/Projects/sportsapp/SportsApp/SportsApp.csproj",
         "projectName": "SportsApp",
-        "projectPath": "/Users/jackwalton/Projects/sportsapp/SportsApp/SportsApp.csproj",
-        "packagesPath": "/Users/jackwalton/.nuget/packages/",
-        "outputPath": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/",
+        "projectPath": "/Users/carter/Projects/sportsapp/SportsApp/SportsApp.csproj",
+        "packagesPath": "/Users/carter/.nuget/packages/",
+        "outputPath": "/Users/carter/Projects/sportsapp/SportsApp/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "/Users/jackwalton/.nuget/NuGet/NuGet.Config"
+          "/Users/carter/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0-android",
@@ -31,7 +31,7 @@
             "targetAlias": "net6.0-android",
             "projectReferences": {}
           },
-          "net6.0-ios15.4": {
+          "net6.0-ios16.0": {
             "targetAlias": "net6.0-ios",
             "projectReferences": {}
           },
@@ -52,18 +52,22 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[6.0.540, )",
+              "version": "[6.0.547, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.540, )",
+              "version": "[6.0.547, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.540, )",
+              "version": "[6.0.547, )",
               "autoReferenced": true
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.18.0, )"
             },
             "MudBlazor": {
               "target": "Package",
@@ -83,64 +87,56 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.Android.Ref.31",
-              "version": "[32.0.465, 32.0.465]"
-            },
-            {
-              "name": "Microsoft.Android.Runtime.31.android-arm",
-              "version": "[32.0.465, 32.0.465]"
-            },
-            {
-              "name": "Microsoft.Android.Runtime.31.android-arm64",
-              "version": "[32.0.465, 32.0.465]"
-            },
-            {
-              "name": "Microsoft.Android.Runtime.31.android-x64",
-              "version": "[32.0.465, 32.0.465]"
-            },
-            {
-              "name": "Microsoft.Android.Runtime.31.android-x86",
-              "version": "[32.0.465, 32.0.465]"
-            },
-            {
               "name": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-              "version": "[6.0.10, 6.0.10]"
+              "version": "[6.0.11, 6.0.11]"
             },
             {
               "name": "Microsoft.AspNetCore.App.Runtime.linux-arm64",
-              "version": "[6.0.10, 6.0.10]"
+              "version": "[6.0.11, 6.0.11]"
             },
             {
               "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-              "version": "[6.0.10, 6.0.10]"
+              "version": "[6.0.11, 6.0.11]"
             },
             {
               "name": "Microsoft.Maui.Controls.Ref.android",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Controls.Runtime.android",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Core.Ref.android",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Core.Runtime.android",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Essentials.Ref.android",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Essentials.Runtime.android",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.android-arm",
+              "version": "[6.0.11, 6.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.android-arm64",
-              "version": "[6.0.9, 6.0.9]"
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.android-x64",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.android-x86",
+              "version": "[6.0.11, 6.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -160,25 +156,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100-rc.2.22477.23/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         },
-        "net6.0-ios15.4": {
+        "net6.0-ios16.0": {
           "targetAlias": "net6.0-ios",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[6.0.540, )",
+              "version": "[6.0.547, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.540, )",
+              "version": "[6.0.547, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.540, )",
+              "version": "[6.0.547, )",
               "autoReferenced": true
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.18.0, )"
             },
             "MudBlazor": {
               "target": "Package",
@@ -204,35 +204,35 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.iOS.Ref",
-              "version": "[15.4.454, 15.4.454]"
+              "version": "[16.0.527, 16.0.527]"
             },
             {
               "name": "Microsoft.iOS.Runtime.iossimulator-x64",
-              "version": "[15.4.454, 15.4.454]"
+              "version": "[16.0.527, 16.0.527]"
             },
             {
               "name": "Microsoft.Maui.Controls.Ref.ios",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Controls.Runtime.ios",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Core.Ref.ios",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Core.Runtime.ios",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Essentials.Ref.ios",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Essentials.Runtime.ios",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             }
           ],
           "frameworkReferences": {
@@ -252,25 +252,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100-rc.2.22477.23/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         },
         "net6.0-maccatalyst15.4": {
           "targetAlias": "net6.0-maccatalyst",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[6.0.540, )",
+              "version": "[6.0.547, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.540, )",
+              "version": "[6.0.547, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.540, )",
+              "version": "[6.0.547, )",
               "autoReferenced": true
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.18.0, )"
             },
             "MudBlazor": {
               "target": "Package",
@@ -297,35 +301,35 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.MacCatalyst.Ref",
-              "version": "[15.4.454, 15.4.454]"
+              "version": "[15.4.471, 15.4.471]"
             },
             {
               "name": "Microsoft.MacCatalyst.Runtime.maccatalyst-x64",
-              "version": "[15.4.454, 15.4.454]"
+              "version": "[15.4.471, 15.4.471]"
             },
             {
               "name": "Microsoft.Maui.Controls.Ref.maccatalyst",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Controls.Runtime.maccatalyst",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Core.Ref.maccatalyst",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Core.Runtime.maccatalyst",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Essentials.Ref.maccatalyst",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             },
             {
               "name": "Microsoft.Maui.Essentials.Runtime.maccatalyst",
-              "version": "[6.0.540, 6.0.540]"
+              "version": "[6.0.547, 6.0.547]"
             }
           ],
           "frameworkReferences": {
@@ -345,7 +349,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100-rc.2.22477.23/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
