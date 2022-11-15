@@ -23,21 +23,22 @@
 
     public async void startConnection()
     {
-        Debug.WriteLine("STARTING CONNECTION DEBUG");
-        Console.WriteLine("STARTING CONNECTION CONSOLE");
-        // string connectionString = "mongodb://127.0.0.1:27017";
         string connectionString = "mongodb+srv://cchannui:cchannui@cluster0.zjtdqmq.mongodb.net/test";
         string databaseName = "sports_app";
         string collectionName = "users";
 
+        // Establish connection to MongoDB.
         var client = new MongoClient(connectionString);
         var db = client.GetDatabase(databaseName);
         var collection = db.GetCollection<UserModel>(collectionName);
 
+        // Create new UserModel object.
         var user = new UserModel { Username = Username, Password = Password };
 
+        // Insert UserModel object into MongoDB.
         await collection.InsertOneAsync(user);
 
+        // Locate document with Username field equal to "carter2020"
         var results = await collection.FindAsync(document => document.Username == "carter2020");
         Debug.WriteLine(results);
     }
