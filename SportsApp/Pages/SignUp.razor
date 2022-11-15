@@ -7,9 +7,9 @@
         <MudContainer Class="d-flex justify-center">
             <MudImage ObjectPosition.Center src="Images/goal.jpg" Alt="goal logo" Width="300" />
         </MudContainer>
-        <MudTextField Align="center" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
-        <MudTextField Align="center" @bind-Value="Password" Label="password" Variant="Variant.Outlined"></MudTextField>
-        <MudTextField Align="center" @bind-Value="LocationString" Label="location" Variant="Variant.Outlined"></MudTextField>
+        <MudTextField Align="center" Required="true" RequiredError="Username is required" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
+        <MudTextField Align="center" Required="true" RequiredError="Password is required" @bind-Value="Password" Label="password" Variant="Variant.Outlined"></MudTextField>
+        <MudTextField Align="center" Required="true" RequiredError="Location is required" @bind-Value="LocationString" Label="location" Variant="Variant.Outlined"></MudTextField>
         @*<MudPaper Class="d-inline-flex pa-4">
             I am a Town Admin
         </MudPaper>
