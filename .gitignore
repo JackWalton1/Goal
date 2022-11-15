@@ -16,7 +16,7 @@ test-results/
 *.user
 _ReSharper.*
 bin
-obj
+*/obj
 packages
 
 # Mac bundle stuff
