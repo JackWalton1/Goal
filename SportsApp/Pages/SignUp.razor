@@ -1,24 +1,41 @@
 ﻿@page "/signup"
 @using MongoDB.Driver
 @using System.Diagnostics
+@inject ISnackbar Snackbar
+@inject NavigationManager nav
 
-<MudContainer>
-    <MudStack Spacing="4">
-        <MudContainer Class="d-flex justify-center">
-            <MudImage ObjectPosition.Center src="Images/goal.jpg" Alt="goal logo" Width="300" />
-        </MudContainer>
+<MudContainer Class="pa-8">
+    <MudStack Spacing="8">
+        <MudButton Class="align-content-start justify-content-start" Size="Size.Large" Href="/login" StartIcon="@Icons.Material.Filled.ChevronLeft">back to log in</MudButton>
+
+        <MudItem>
+            <MudText Typo="Typo.h3" Align="Align.Center">create account</MudText>
+            <MudText Align="Align.Center">* = required field</MudText>
+        </MudItem>
+
         <MudTextField Align="center" Required="true" RequiredError="Username is required" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
         <MudTextField Align="center" Required="true" RequiredError="Password is required" @bind-Value="Password" Label="password" Variant="Variant.Outlined"></MudTextField>
-        <MudTextField Align="center" Required="true" RequiredError="Location is required" @bind-Value="LocationString" Label="location" Variant="Variant.Outlined"></MudTextField>
-        @*<MudPaper Class="d-inline-flex pa-4">
-            I am a Town Admin
-        </MudPaper>
-        <MudPaper Class="d-inline-flex pa-4">
-            I am a regular user
-        </MudPaper>*@
-        <MudButton Align="center" Variant="Variant.Filled" OnClick="startConnection">create account</MudButton>
-        <MudButton Align="center" Size="Size.Large" Href="/login" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">registered before? log in</MudButton>
-        <MudButton Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">continue without logging in</MudButton>
+        <MudTextField Align="center" Required="true" RequiredError="Location is required" @bind-Value="Location" Label="location" Variant="Variant.Outlined"></MudTextField>
+
+        <MudForm Class="d-flex justify-center">
+            <MudRadioGroup Required="true" @bind-SelectedOption="@AccessLevel">
+                <MudRadio Class="pr-16" Option="@("Citizen")">I am a citizen</MudRadio>
+                <MudRadio Class="pl-16" Option="@("Town Admin")">I am a town administrator</MudRadio>
+            </MudRadioGroup>
+        </MudForm>
+
+        <MudButton Disabled="@_processing" Variant="Variant.Filled" OnClick="ProcessSomething">
+            @if (_processing)
+            {
+                <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                <MudText Class="ms-2">Processing</MudText>
+            }
+            else
+            {
+                <MudText>create account</MudText>
+            }
+        </MudButton>
+
         <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
     </MudStack>
 </MudContainer>
@@ -27,7 +44,22 @@
 
     public string Username { get; set; }
     public string Password { get; set; }
-    public string LocationString { get; set; }
+    public string Location { get; set; }
+    public string AccessLevel { get; set; }
+
+    private bool _processing = false;
+
+    async Task ProcessSomething()
+    {
+        _processing = true;
+        await Task.Delay(2000);
+        Snackbar.Clear();
+        Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
+        startConnection();
+        Snackbar.Add("account successfully created");
+        nav.NavigateTo("/");
+        _processing = false;
+    }
 
 
     public async void startConnection()
@@ -42,14 +74,13 @@
         var collection = db.GetCollection<UserModel>(collectionName);
 
         // Create new UserModel object.
-        var user = new UserModel { Username = Username, Password = Password, LocationString = LocationString };
+        var user = new UserModel { Username = Username, Password = Password, Location = Location, AccessLevel = AccessLevel};
 
         // Insert UserModel object into MongoDB.
-        if(user.Username != null || user.Password != null || user.LocationString != null)
+        if (user.Username != null || user.Password != null || user.Location != null || user.AccessLevel != null)
         {
             await collection.InsertOneAsync(user);
         }
-
 
         // Locate document with Username field equal to "carter2020"
         var results = await collection.FindAsync(document => document.Username == "carter2020");

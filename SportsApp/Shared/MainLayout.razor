@@ -1,22 +1,15 @@
 ﻿@inherits LayoutComponentBase
 
-
-
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-        <MudThemeProvider />
-        <MudDialogProvider />
-        <MudSnackbarProvider />
-    </div>
-
-	<main>
-		<div class="top-row px-4">
-			<a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-		</div>
-
-		<article class="content px-4">
-			@Body
-		</article>
-	</main>
-</div>
+<MudThemeProvider />
+<MudSnackbarProvider />
+<MudLayout>
+    <MudAppBar Style="@($"color:{Colors.Grey.Darken3}; background:{Colors.Grey.Lighten2};")" Fixed="true" Dense="true">
+        <MudNavLink Class="justify-content-center" Href="/" Icon="@Icons.Filled.Home">home</MudNavLink>
+        <MudNavLink Href="/discover" Icon="@Icons.Filled.Explore">discover</MudNavLink>
+        <MudNavLink Href="/search" Icon="@Icons.Filled.Search">search</MudNavLink>
+        <MudNavLink Href="/login" Icon="@Icons.Filled.Person">log in</MudNavLink>
+    </MudAppBar>
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>

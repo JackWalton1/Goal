@@ -1,22 +1,35 @@
 ﻿@page "/"
 
-<MudStack Spacing="8">
-    <MudItem>
-        <MudText Typo="Typo.h3" Align="Align.Center">Hello, Jane.</MudText>
-        <MudText Align="Align.Center">Welcome to goal! See your upcoming and recommended events here.</MudText>
-    </MudItem>
-    <MudStack Spacing="4">
-        <MudText Typo="Typo.h4" Align="Align.Left">Your upcoming events</MudText>
-        <MudStack Row="true">
-            <MudImage Class="rounded-lg" Src="Images/image_template1.jpg" Width="300" Height="200" />
-            <MudImage Class="rounded-lg" Src="Images/image_template2.jpg" Width="300" Height="200" />
+<MudContainer Class="pa-8">
+    <MudStack Spacing="16">
+        <MudItem>
+            <!--TODO: REPLACE WITH NAME OF CURRENT USER-->
+            <MudText Typo="Typo.h3" Align="Align.Center">hello</MudText>
+            <MudText Align="Align.Center">welcome to goal - see your upcoming and recommended events here.</MudText>
+        </MudItem>
+
+        <!--Upcoming events-->
+        <MudStack Spacing="4">
+            <MudText Typo="Typo.h4" Align="Align.Left">your upcoming events</MudText>
+            <MudStack Row="true" Class="overflow-scroll">
+                <!--TODO: REPLACE WITH CONDITIONAL RENDERING FROM DATABASE-->
+                <SportsApp.Components.EventCardsSampleDisplay/>
+            </MudStack>
+        </MudStack>     
+        
+        <!--Events/Centers followed-->
+        <MudStack Spacing="4">
+            <MudText Typo="Typo.h4" Align="Align.Left">events and centers you follow</MudText>
+            <MudStack Row="true" Class="overflow-scroll">
+                <!--TODO: REPLACE WITH CONDITIONAL RENDERING FROM DATABASE-->
+                <SportsApp.Components.EventCardsSampleDisplay />
+            </MudStack>
         </MudStack>
+
+        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
     </MudStack>
-    <MudStack Spacing="4">
-        <MudText Typo="Typo.h4" Align="Align.Left">Events and centers you follow</MudText>
-        <MudStack Row="true">
-            <MudImage Class="rounded-lg" Src="Images/image_template2.jpg" Width="300" Height="200" />
-        </MudStack>
-    </MudStack>
-    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
-</MudStack>
+</MudContainer>
+
+ @code {
+     
+ }

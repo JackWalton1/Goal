@@ -1,53 +1,49 @@
 @page "/search"
 
-<MudStack Spacing="8">
-    <MudItem>
-        <MudText Typo="Typo.h3" Align="Align.Center">Search</MudText>
-        <MudText Align="Align.Center">Discover new events and find events you've heard about.</MudText>
-    </MudItem>
-    <MudItem>
-        <MudText Typo="Typo.h4">Keywords</MudText>
-        <MudTextField @bind-Value="TextValue" Label="Ex.Roma Women's Tennis..." Variant="Variant.Outlined"></MudTextField>
-    </MudItem>
-    <MudItem>
-        <MudText Typo="Typo.h4">Location</MudText>
-        <MudTextField @bind-Value="TextValue" Label="Enter city, region, zip, etc.." Variant="Variant.Outlined"></MudTextField>
-    </MudItem>
-    <MudItem>
-        <MudText Typo="Typo.h4">Sports</MudText>
-        <MudStack Row="true">
-            <MudCard Elevation="25" Class="d-flex pa-4 align-content-center rounded-lg">
-                <MudImage Src="Images/basketball-ball-variant.png" Width="60" Height="60" />
-            </MudCard>
-            <MudCard Elevation="25" Class="d-flex pa-4 align-content-center rounded-lg">
-                <MudImage Src="Images/tennis.png" Width="60" Height="60" />
-            </MudCard>
-            <MudCard Elevation="25" Class="d-flex pa-4 align-content-center rounded-lg">
-                <MudImage Src="Images/rugby.png" Width="60" Height="60" />
-            </MudCard>
-            <MudCard Elevation="25" Class="d-flex pa-4 align-content-center rounded-lg">
-                <MudImage Src="Images/volleyball-ball.png" Width="60" Height="60" />
-            </MudCard>
-            <MudCard Elevation="25" Class="d-flex pa-4 align-content-center rounded-lg">
-                <MudImage Src="Images/water-polo-game.png" Width="60" Height="60" />
-            </MudCard>
-            <MudCard Elevation="25" Class="d-flex pa-4 align-content-center rounded-lg">
-                <MudImage Src="Images/soccer-ball-variant.png" Width="60" Height="60" />
-            </MudCard>
-            <MudCard Elevation="25" Class="d-flex pa-4 align-content-center rounded-lg">
-                <MudImage Src="Images/golf-player.png" Width="60" Height="60" />
-            </MudCard>
-            <MudCard Elevation="25" Class="d-flex pa-4 align-content-center rounded-lg">
-                <MudImage Src="Images/option.png" Width="60" Height="60" />
-            </MudCard>
-        </MudStack>
-    </MudItem>
-    <MudButton Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">More filters</MudButton>
-    <MudButton Variant="Variant.Filled" Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">search</MudButton>
-    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
+<MudContainer Class="pa-8">
+    <MudStack Spacing="16">
+        <MudItem>
+            <MudText Typo="Typo.h3" Align="Align.Center">search</MudText>
+            <MudText Align="Align.Center">discover new events and find events you've heard about.</MudText>
+        </MudItem>
 
-</MudStack>
+        <!--Keywords-->
+        <MudItem>
+            <MudText Typo="Typo.h4">keywords</MudText>
+            <MudTextField @bind-Value="keywords" Label="Ex.Roma Women's Tennis..." Variant="Variant.Outlined"></MudTextField>
+        </MudItem>
+
+        <!--Location-->
+        <MudItem>
+            <MudText Typo="Typo.h4">location</MudText>
+            <MudTextField @bind-Value="location" Label="Enter city, region, zip, etc.." Variant="Variant.Outlined"></MudTextField>
+        </MudItem>
+
+        <!--Sports-->
+        <MudItem>
+            <MudText Typo="Typo.h4">sports</MudText>
+            <MudStack Row="true" Class="d-flex flex-wrap gap-4 justify-content-center">
+                <SportsApp.Components.SportSearchIcon icon="@Icons.Filled.SportsBasketball" />
+                <SportsApp.Components.SportSearchIcon icon="@Icons.Filled.SportsSoccer" />
+                <SportsApp.Components.SportSearchIcon icon="@Icons.Filled.SportsTennis" />
+                <SportsApp.Components.SportSearchIcon icon="@Icons.Filled.SportsRugby" />
+                <SportsApp.Components.SportSearchIcon icon="@Icons.Filled.SportsGolf" />
+                <SportsApp.Components.SportSearchIcon icon="@Icons.Filled.SportsCricket" />
+                <SportsApp.Components.SportSearchIcon icon="@Icons.Filled.SportsGymnastics" />
+                <SportsApp.Components.SportSearchIcon icon="@Icons.Filled.SportsHockey" />
+                <SportsApp.Components.SportSearchIcon icon="@Icons.Filled.SportsMotorsports" />
+                <SportsApp.Components.SportSearchIcon icon="@Icons.Filled.MoreHoriz" />
+            </MudStack>
+        </MudItem>
+
+        <MudButton Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">More filters</MudButton>
+        <MudButton Variant="Variant.Filled" Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">search</MudButton>
+        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
+
+    </MudStack>
+</MudContainer>
 
 @code {
-    public string TextValue { get; set; }
+    public string keywords { get; set; }
+    public string location { get; set; }
 }

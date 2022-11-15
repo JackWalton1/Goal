@@ -15,6 +15,8 @@ public class UserModel
     [Required]
     public string Password { get; set; }
     [Required]
-    public string LocationString { get; set; }
+    public string Location { get; set; }
+    [Required]
+    public string AccessLevel { get; set; }
 }
 
