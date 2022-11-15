@@ -1,19 +1,46 @@
 ﻿@page "/login"
+@using MongoDB.Driver
+@using System.Diagnostics
 
 <MudContainer>
     <MudStack Spacing="4">
         <MudContainer Class="d-flex justify-center">
             <MudImage ObjectPosition.Center src="Images/goal.jpg" Alt="goal logo" Width="300" />
         </MudContainer>
-        <MudTextField Align="center" @bind-Value="TextValue" Label="username" Variant="Variant.Outlined"></MudTextField>
-        <MudTextField Align="center" @bind-Value="TextValue" Label="password" Variant="Variant.Outlined"></MudTextField>
-        <MudButton Align="center" Variant="Variant.Filled">log in</MudButton>
-        <MudButton Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">not registered? create account</MudButton>
+        <MudTextField Align="center" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
+        <MudTextField Align="center" @bind-Value="Password" Label="password" Variant="Variant.Outlined"></MudTextField>
+        <MudButton Align="center" Variant="Variant.Filled">log in new</MudButton>
+        <MudButton Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true" OnClick="startConnection">not registered? create account</MudButton>
         <MudButton Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">continue without logging in</MudButton>
         <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
     </MudStack>
 </MudContainer>
 
 @code {
-    public string TextValue { get; set; }
+    public string Username { get; set; }
+    public string Password { get; set; }
+
+
+    public async void startConnection()
+    {
+        string connectionString = "mongodb+srv://cchannui:cchannui@cluster0.zjtdqmq.mongodb.net/test";
+        string databaseName = "sports_app";
+        string collectionName = "users";
+
+        // Establish connection to MongoDB.
+        var client = new MongoClient(connectionString);
+        var db = client.GetDatabase(databaseName);
+        var collection = db.GetCollection<UserModel>(collectionName);
+
+        // Create new UserModel object.
+        var user = new UserModel { Username = Username, Password = Password };
+
+        // Insert UserModel object into MongoDB.
+        await collection.InsertOneAsync(user);
+
+        // Locate document with Username field equal to "carter2020"
+        var results = await collection.FindAsync(document => document.Username == "carter2020");
+        Debug.WriteLine(results);
+    }
+
 }

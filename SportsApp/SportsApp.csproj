@@ -66,8 +66,10 @@
     </ItemGroup>
     <ItemGroup>
       <None Remove="MudBlazor" />
+      <None Remove="MongoDB.Driver" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="MudBlazor" Version="6.0.17" />
+      <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
     </ItemGroup>
 </Project>

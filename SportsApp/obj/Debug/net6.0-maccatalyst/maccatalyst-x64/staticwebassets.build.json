@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hFL7aypeWZ1R0WRS97uQvwfAsAkSwhP3bd+RWlTwy74=",
+  "Hash": "iR3rP80A7cEOBiHajKmh93RNU70VowPSnx5+GVYVXz8=",
   "Source": "SportsApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -10,17 +10,17 @@
     {
       "Name": "SportsApp/wwwroot",
       "Source": "SportsApp",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/jackwalton/.nuget/packages/mudblazor/6.0.17/staticwebassets/MudBlazor.min.css",
+      "Identity": "/Users/carter/.nuget/packages/mudblazor/6.0.17/staticwebassets/MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/jackwalton/.nuget/packages/mudblazor/6.0.17/staticwebassets/",
+      "ContentRoot": "/Users/carter/.nuget/packages/mudblazor/6.0.17/staticwebassets/",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/jackwalton/.nuget/packages/mudblazor/6.0.17/staticwebassets/MudBlazor.min.css"
+      "OriginalItemSpec": "/Users/carter/.nuget/packages/mudblazor/6.0.17/staticwebassets/MudBlazor.min.css"
     },
     {
-      "Identity": "/Users/jackwalton/.nuget/packages/mudblazor/6.0.17/staticwebassets/MudBlazor.min.js",
+      "Identity": "/Users/carter/.nuget/packages/mudblazor/6.0.17/staticwebassets/MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/jackwalton/.nuget/packages/mudblazor/6.0.17/staticwebassets/",
+      "ContentRoot": "/Users/carter/.nuget/packages/mudblazor/6.0.17/staticwebassets/",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/jackwalton/.nuget/packages/mudblazor/6.0.17/staticwebassets/MudBlazor.min.js"
+      "OriginalItemSpec": "/Users/carter/.nuget/packages/mudblazor/6.0.17/staticwebassets/MudBlazor.min.js"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/scopedcss/bundle/SportsApp.styles.css",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/scopedcss/bundle/SportsApp.styles.css",
       "SourceId": "SportsApp",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/scopedcss/bundle/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/scopedcss/bundle/",
       "BasePath": "/",
       "RelativePath": "SportsApp.styles.css",
       "AssetKind": "All",
@@ -65,13 +65,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/scopedcss/bundle/SportsApp.styles.css"
+      "OriginalItemSpec": "/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/scopedcss/bundle/SportsApp.styles.css"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/scopedcss/projectbundle/SportsApp.bundle.scp.css",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/scopedcss/projectbundle/SportsApp.bundle.scp.css",
       "SourceId": "SportsApp",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/scopedcss/projectbundle/",
       "BasePath": "/",
       "RelativePath": "SportsApp.bundle.scp.css",
       "AssetKind": "All",
@@ -82,13 +82,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/jackwalton/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/scopedcss/projectbundle/SportsApp.bundle.scp.css"
+      "OriginalItemSpec": "/Users/carter/Projects/sportsapp/SportsApp/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/scopedcss/projectbundle/SportsApp.bundle.scp.css"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/app.css",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/app.css",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot/css/app.css"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/bootstrap/bootstrap.min.css",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/FONT-LICENSE",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/FONT-LICENSE",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.eot"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.otf"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.svg"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.woff"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/ICON-LICENSE",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/ICON-LICENSE",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/ICON-LICENSE"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/README.md",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/css/open-iconic/README.md",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/favicon.ico",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/favicon.ico",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/basketball-ball-variant.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/basketball-ball-variant.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/basketball-ball-variant.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot/Images/basketball-ball-variant.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/event-map.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/event-map.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/event-map.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot/Images/event-map.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/goal_logo.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/goal_logo.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/goal_logo.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot/Images/goal_logo.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/goal.jpg",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/goal.jpg",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/goal.jpg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot/Images/goal.jpg"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/golf-player.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/golf-player.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/golf-player.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot/Images/golf-player.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/image_template1.jpg",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/image_template1.jpg",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/image_template1.jpg",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot/Images/image_template1.jpg"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/image_template2.jpg",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/image_template2.jpg",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/image_template2.jpg",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot/Images/image_template2.jpg"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/location-pin.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/location-pin.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/location-pin.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot/Images/location-pin.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/option.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/option.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/option.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot/Images/option.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/profile_image.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/profile_image.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/profile_image.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot/Images/profile_image.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/rugby.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/rugby.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/rugby.png",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot/Images/rugby.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/soccer-ball-variant.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/soccer-ball-variant.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/soccer-ball-variant.png",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot/Images/soccer-ball-variant.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/stadium_ticket_map.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/stadium_ticket_map.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/stadium_ticket_map.png",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot/Images/stadium_ticket_map.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/tennis.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/tennis.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/tennis.png",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot/Images/tennis.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/volleyball-ball.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/volleyball-ball.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/volleyball-ball.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot/Images/volleyball-ball.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/Images/water-polo-game.png",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/Images/water-polo-game.png",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "Images/water-polo-game.png",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot/Images/water-polo-game.png"
     },
     {
-      "Identity": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/index.html",
+      "Identity": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/index.html",
       "SourceId": "SportsApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/jackwalton/Projects/sportsapp/SportsApp/wwwroot/",
+      "ContentRoot": "/Users/carter/Projects/sportsapp/SportsApp/wwwroot/",
       "BasePath": "/",
       "RelativePath": "index.html",
       "AssetKind": "All",
