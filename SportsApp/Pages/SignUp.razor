@@ -1,4 +1,4 @@
-﻿@page "/login"
+﻿@page "/signup"
 @using MongoDB.Driver
 @using System.Diagnostics
 
@@ -9,8 +9,15 @@
         </MudContainer>
         <MudTextField Align="center" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
         <MudTextField Align="center" @bind-Value="Password" Label="password" Variant="Variant.Outlined"></MudTextField>
-        <MudButton Align="center" Variant="Variant.Filled">log in</MudButton>
-        <MudButton Align="center" Size="Size.Large" Href="/signup" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true" OnClick="startConnection">not registered? create account</MudButton>
+        <MudTextField Align="center" @bind-Value="LocationString" Label="location" Variant="Variant.Outlined"></MudTextField>
+        @*<MudPaper Class="d-inline-flex pa-4">
+            I am a Town Admin
+        </MudPaper>
+        <MudPaper Class="d-inline-flex pa-4">
+            I am a regular user
+        </MudPaper>*@
+        <MudButton Align="center" Variant="Variant.Filled">create account</MudButton>
+        <MudButton Align="center" Size="Size.Large" Href="/login" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true" OnClick="startConnection">registered before? log in</MudButton>
         <MudButton Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">continue without logging in</MudButton>
         <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
     </MudStack>
@@ -19,6 +26,7 @@
 @code {
     public string Username { get; set; }
     public string Password { get; set; }
+    public string LocationString { get; set; }
 
 
     public async void startConnection()
