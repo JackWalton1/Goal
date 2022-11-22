@@ -67,10 +67,12 @@
     <ItemGroup>
       <None Remove="MudBlazor" />
       <None Remove="MongoDB.Driver" />
+      <None Remove="Newtonsoft.Json" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="MudBlazor" Version="6.0.17" />
       <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Data\" />
