@@ -73,11 +73,11 @@
       <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
     </ItemGroup>
     <ItemGroup>
+      <Folder Include="Data\" />
+    </ItemGroup>
+    <ItemGroup>
       <None Update="Pages\MapTest.html">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Components\NewFolder\" />
     </ItemGroup>
 </Project>
