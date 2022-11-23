@@ -3,12 +3,12 @@
 <MudThemeProvider />
 <MudSnackbarProvider />
 <MudLayout>
-    <MudAppBar Style="@($"color:{Colors.Grey.Darken3}; background:{Colors.Grey.Lighten2};")" Fixed="true" Dense="true">
-        <MudNavLink Class="justify-content-center" Href="/" Icon="@Icons.Filled.Home">home</MudNavLink>
-        <MudNavLink Href="/discover" Icon="@Icons.Filled.Explore">discover</MudNavLink>
-        <MudNavLink Href="/payment" Icon="@Icons.Filled.Explore">payment</MudNavLink>
-        <MudNavLink Href="/search" Icon="@Icons.Filled.Search">search</MudNavLink>
-        <MudNavLink Href="/login" Icon="@Icons.Filled.Person">log in</MudNavLink>
+    <MudAppBar Style="@($"color:{Colors.Grey.Darken3}; background:{Colors.Grey.Lighten2};")" Fixed="true" Bottom="true" Dense="true">
+        <MudNavLink Class="justify-content-center" Href="/" Icon="@Icons.Filled.Home"></MudNavLink>
+        <MudNavLink Href="/discover" Icon="@Icons.Filled.Explore"></MudNavLink>
+        <MudNavLink Href="/payment" Icon="@Icons.Filled.Payment"></MudNavLink>
+        <MudNavLink Href="/search" Icon="@Icons.Filled.Search"></MudNavLink>
+        <MudNavLink Href="/login" Icon="@Icons.Filled.Person"  ></MudNavLink>
     </MudAppBar>
     <MudMainContent>
         @Body

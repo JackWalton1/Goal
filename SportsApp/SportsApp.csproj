@@ -67,10 +67,12 @@
     <ItemGroup>
       <None Remove="MudBlazor" />
       <None Remove="MongoDB.Driver" />
+      <None Remove="Stripe.net" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="MudBlazor" Version="6.0.17" />
       <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+      <PackageReference Include="Stripe.net" Version="41.1.0" />
     </ItemGroup>
     <ItemGroup>
       <None Update="Pages\MapTest.html">
