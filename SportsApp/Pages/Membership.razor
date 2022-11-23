@@ -1,0 +1,69 @@
+﻿@page "/membership"
+@using Stripe
+@using SportsApp.Data
+@using System.Diagnostics
+@inject ISnackbar Snackbar
+@inject NavigationManager nav
+
+<EditForm OnValidSubmit="@FormSubmit" Model="@accountOptions">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <h4>Add Credit Card</h4>
+    <div class="form-group row">
+        <label for="cardholderName" class="col-sm-6 col-form-label">Cardholder Name:</label>
+        <input id="cardholderMame" class="form-control col-sm-6 input-lg" type="text"
+               @bind="accountOptions.CardHolderName">
+    </div>
+    <div class="form-group row">
+        <label for="cardNum" class="col-sm-6 col-form-label">Card Number:</label>
+        <input id="cardNum" class="form-control col-sm-6 input-lg" type="number"
+               @bind="accountOptions.CardNumber" />
+    </div>
+    <div class="form-group row">
+        <label for="cardExpiryMo" class="col-sm-6 col-form-label">Expiration Month:</label>
+        <input id="cardExpiryMo" class="form-control col-sm-6 input-lg" type="number"
+               @bind="accountOptions.CardExpiryMonth" />
+    </div>
+    <div class="form-group row">
+        <label for="cardExpiryYear" class="col-sm-6 col-form-label">Expiration Year:</label>
+        <input id="cardExpiryYear" class="form-control col-sm-6 input-lg" type="number"
+               @bind="accountOptions.CardExpiryYear" />
+    </div>
+    <div class="form-group row">
+        <label for="cardCvc" class="col-sm-6 col-form-label">CVC Security Code:</label>
+        <input id="cardCvc" class="form-control col-sm-6 input-lg" type="number"
+               @bind="accountOptions.CardCvc" />
+    </div>
+</EditForm>
+<MudButton Disabled="@_processing" Variant="Variant.Filled" OnClick="ProcessSomething">
+    @if (_processing)
+    {
+        <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+        <MudText Class="ms-2">Processing</MudText>
+    }
+    else
+    {
+        <MudText>Pay Now</MudText>
+    }
+</MudButton>
+
+@code {
+    private Card card;
+    private CardModel accountOptions = new CardModel();
+
+    private async Task FormSubmit()
+    {
+
+    }
+    private bool _processing = false;
+    async Task ProcessSomething()
+    {
+        _processing = true;
+        await Task.Delay(2000);
+        Snackbar.Clear();
+        Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
+        Snackbar.Add("successfully paid!");
+        nav.NavigateTo("/");
+        _processing = false;
+    }
+}
