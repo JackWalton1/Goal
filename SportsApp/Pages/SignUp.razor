@@ -1,4 +1,6 @@
 ﻿@page "/signup"
+@using UserDatabaseManagement
+@using EventDatabaseManagement
 @using MongoDB.Driver
 @using System.Diagnostics
 @using System.Text
@@ -28,7 +30,7 @@
             </MudRadioGroup>
         </MudForm>
 
-        <MudButton Disabled="@_processing" Variant="Variant.Filled" OnClick="testAzure">
+        <MudButton Disabled="@_processing" Variant="Variant.Filled" OnClick="referenceFetchEvent">
             @if (_processing)
             {
                 <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
@@ -53,6 +55,43 @@
 
     private bool _processing = false;
 
+    public void referenceCreateAccount()
+    {
+        UserDatabaseManagement userdatabasemanagment = new UserDatabaseManagement();
+        userdatabasemanagment.createAccount();
+    }
+
+    public void referenceUpdateAccount()
+    {
+        UserDatabaseManagement userdatabasemanagment = new UserDatabaseManagement();
+        userdatabasemanagment.updateAccount();
+    }
+
+    public void referenceFetchAccount()
+    {
+        UserDatabaseManagement userdatabasemanagment = new UserDatabaseManagement();
+        var account = userdatabasemanagment.fetchAccount();
+    }
+
+    public void referenceCreateEvent()
+    {
+        EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
+        eventDatabaseManagement.createEvent();
+    }
+
+    public void referenceUpdateEvent()
+    {
+        EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
+        eventDatabaseManagement.updateEvent();
+    }
+
+    public void referenceFetchEvent()
+    {
+        EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
+        var eventModel = eventDatabaseManagement.fetchEvent();
+        Console.WriteLine("Ok done");
+    }
+
     async Task ProcessSomething()
     {
         _processing = true;
@@ -65,41 +104,13 @@
         _processing = false;
     }
 
-    // New method for create account function.
-    public async void testAzure()
-    {
-
-        using(var client = new HttpClient())
-        {
-            // Test/temp variables.
-            var username = "carter";
-            var password = "pass123";
-            var location = "test_location";
-            var access_level = "test_access";
-            var endpoint = new Uri("https://sportsappfunctionapp.azurewebsites.net/api/CreateAccount");
-
-            var newUser = new UserModel()
-            {
-                Username = username,
-                Password = password,
-                Location = location,
-                AccessLevel = access_level
-            };
-
-            // Serialize JSON user credentials.
-            var newPostJson = JsonConvert.SerializeObject(newUser);
-            var payload = new StringContent(newPostJson, Encoding.UTF8, "application/json");
-
-            // Make POST request.
-            var result = client.PostAsync(endpoint, payload).Result.Content.ReadAsStringAsync().Result;
-        }
-    }
-
     public async void startConnection()
     {
         string connectionString = "mongodb+srv://cchannui:cchannui@cluster0.zjtdqmq.mongodb.net/test";
         string databaseName = "sports_app";
         string collectionName = "users";
+
+        bool isValid = false;
 
         // Establish connection to MongoDB.
         var client = new MongoClient(connectionString);
@@ -116,9 +127,12 @@
         }
 
         // Locate document with Username field equal to "carter2020"
-        var results = await collection.FindAsync(document => document.Username == "carter2020");
-        Debug.WriteLine(results);
+        var results = await collection.Find(document => document.Username == "carter2020").SingleAsync();
 
+        if (results.Password == "testpass")
+        {
+            isValid = true;
+        }
 
     }
 
