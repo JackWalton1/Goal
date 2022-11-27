@@ -69,11 +69,15 @@
       <None Remove="MudBlazor" />
       <None Remove="MongoDB.Driver" />
       <None Remove="Stripe.net" />
+      <None Remove="Selenium.Support" />
+      <None Remove="Selenium.WebDriver.ChromeDriver" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="MudBlazor" Version="6.0.17" />
       <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
       <PackageReference Include="Stripe.net" Version="41.1.0" />
+      <PackageReference Include="Selenium.Support" Version="4.6.0" />
+      <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="107.0.5304.6200" />
     </ItemGroup>
     <ItemGroup>
       <None Include="wwwroot\MapTest.html">
