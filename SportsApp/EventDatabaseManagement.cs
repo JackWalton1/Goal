@@ -7,17 +7,11 @@ namespace EventDatabaseManagement
 {
 	public class EventDatabaseManagement
 	{
-
-        public async void createEvent()
+        public async void createEvent(string title, string location, string date, string description)
         {
 
             using (var client = new HttpClient())
             {
-                // Test/temp variables.
-                var title = "test";
-                var location = "test";
-                var date = "test";
-                var description = "test";
                 var endpoint = new Uri("https://sportsfunctionapp.azurewebsites.net/api/CreateEvent");
 
                 var newEvent = new EventModel()
@@ -38,12 +32,12 @@ namespace EventDatabaseManagement
             }
         }
 
-        public async Task<EventModel> fetchEvent()
+        public async Task<EventModel> fetchEvent(string id)
         {
             using (var client = new HttpClient())
             {
                 // Test/temp variables.
-                var id = "6381de942c54e6d4762432c3";
+                // var id = "6381de942c54e6d4762432c3";
 
                 var endpoint = new Uri($"https://sportsfunctionapp.azurewebsites.net/api/FetchAccount?id={id}");
 
@@ -56,16 +50,10 @@ namespace EventDatabaseManagement
             }
         }
 
-        public async void updateEvent()
+        public async void updateEvent(string event_id, string new_location, string new_date, string new_description)
         {
             using (var client = new HttpClient())
             {
-                // Temp testing variables.
-                string event_id = "6381de942c54e6d4762432c3";
-                string new_location = "updated";
-                string new_date = "updated";
-                string new_description = "updated";
-
                 var endpoint = new Uri($"https://sportsfunctionapp.azurewebsites.net/api/UpdateEvent?id={event_id}");
 
                 // Create new EventModel object that contains the updated event info.

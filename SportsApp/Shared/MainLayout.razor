@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@using StateManager
 
 <MudThemeProvider />
 <MudSnackbarProvider />
@@ -7,9 +8,19 @@
         <MudNavLink Class="justify-content-center" Href="/" Icon="@Icons.Filled.Home"></MudNavLink>
         <MudNavLink Href="/discover" Icon="@Icons.Filled.Explore"></MudNavLink>
         <MudNavLink Href="/search" Icon="@Icons.Filled.Search"></MudNavLink>
-        <MudNavLink Href="/login" Icon="@Icons.Filled.Person"></MudNavLink>
+        @if (StateManager.CurrentUser == null)
+        {
+            <MudNavLink Href="/login" Icon="@Icons.Filled.Person"></MudNavLink>
+        } else
+        {
+            <MudNavLink Href="/profile" Icon="@Icons.Filled.Person"></MudNavLink>
+        }
     </MudAppBar>
     <MudMainContent>
         @Body
     </MudMainContent>
 </MudLayout>
+
+@code {
+
+}

@@ -2,22 +2,17 @@
 using SportsApp;
 using System.Text;
 using Newtonsoft.Json;
+using MongoDB.Driver.Core.Authentication;
 
 namespace UserDatabaseManagement
 {
 	public class UserDatabaseManagement
 	{
-
-        public async void createAccount()
+        public async void createAccount(string username, string password, string location, string access_level)
         {
 
             using (var client = new HttpClient())
             {
-                // Test/temp variables.
-                var username = "carter";
-                var password = "pass123";
-                var location = "test_location";
-                var access_level = "test_access";
                 var endpoint = new Uri("https://sportsfunctionapp.azurewebsites.net/api/CreateAccount");
 
                 var newUser = new UserModel()
@@ -38,14 +33,10 @@ namespace UserDatabaseManagement
             }
         }
 
-        public async Task<UserModel> fetchAccount()
+        public async Task<UserModel> fetchAccount(string username, string password)
         {
             using (var client = new HttpClient())
             {
-                // Test/temp variables.
-                var username = "CARTER1";
-                var password = "carterpassword";
-
                 var endpoint = new Uri($"https://sportsfunctionapp.azurewebsites.net/api/FetchAccount?username={username}&password={password}");
 
                 // Make GET request.
@@ -57,15 +48,10 @@ namespace UserDatabaseManagement
             }
         }
 
-        public async void updateAccount()
+        public async void updateAccount(string username, string new_password, string new_location)
         {
             using (var client = new HttpClient())
             {
-                // Temp testing variables.
-                string username = "CARTER1";
-                string new_password = "p";
-                string new_location = "l";
-
                 var endpoint = new Uri($"https://sportsfunctionapp.azurewebsites.net/api/UpdateAccount?username={username}");
 
                 // Create new UserModel object that contains the updated user info.

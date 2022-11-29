@@ -1,21 +1,95 @@
 ﻿@page "/login"
+@using UserDatabaseManagement
+@using StateManager
+@inject NavigationManager nav
+@inject ISnackbar Snackbar
 
-<MudContainer Class="pa-8">
+<MudContainer Class="px-8">
     <MudStack Spacing="4">
         <MudContainer Class="d-flex justify-center">
             <MudImage ObjectPosition.Center src="Images/goal.jpg" Alt="goal logo" Width="300" />
         </MudContainer>
-        <MudTextField Align="center" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
-        <MudTextField Align="center" @bind-Value="Password" Label="password" Variant="Variant.Outlined"></MudTextField>
-        <MudButton Align="center" Variant="Variant.Filled">log in</MudButton>
+        <MudTextField Error="@badInputs" Align="center" @bind-Value="username" Label="username" Variant="Variant.Outlined"></MudTextField>
+        <MudTextField Error="@badInputs" Align="center" @bind-Value="password" Label="password" Variant="Variant.Outlined"
+                      InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="viewPassword" AdornmentAriaLabel="Show Password"></MudTextField>
+        <MudButton Disabled="@processingLogin" Align="center" Variant="Variant.Filled" OnClick="login">
+            @if (processingLogin)
+            {
+                <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                <MudText Class="ms-2">processing</MudText>
+            }
+            else
+            {
+                <MudText>log in</MudText>
+            }
+        </MudButton>
         <MudButton Href="/signup" Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">not registered? create account</MudButton>
-        <MudButton Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">continue without logging in</MudButton>
-        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
+        <MudButton Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true" OnClick="navigateHome">continue without logging in</MudButton>
     </MudStack>
 </MudContainer>
 
 
 @code {
-    public string Username { get; set; }
-    public string Password { get; set; }
+    public string username { get; set; }
+    public string password { get; set; }
+
+    private bool processingLogin = false;
+    private bool badInputs = false;
+
+    bool isShow;
+    InputType PasswordInput = InputType.Password;
+    string PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
+
+    void viewPassword()
+    {
+        @if (isShow)
+        {
+            isShow = false;
+            PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
+            PasswordInput = InputType.Password;
+        }
+        else
+        {
+            isShow = true;
+            PasswordInputIcon = Icons.Material.Filled.Visibility;
+            PasswordInput = InputType.Text;
+        }
+    }
+
+    void navigateHome()
+    {
+        Snackbar.Clear();
+        Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
+        Snackbar.Add("continuing anonymously");
+        nav.NavigateTo("/");
+    }
+
+    async Task login()
+    {
+        // start loading, setup alert
+        processingLogin = true;
+        Snackbar.Clear();
+        Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
+
+        // fetch user login
+        UserDatabaseManagement userDatabaseManagement = new UserDatabaseManagement();
+        var account = await userDatabaseManagement.fetchAccount(username, password);
+
+        // check if valid login
+        if (account == null)
+        {
+            Snackbar.Add("incorrrect username or password", Severity.Error);
+            processingLogin = false;
+            badInputs = true;
+        } else
+        {
+            badInputs = false;
+            processingLogin = false;
+            Snackbar.Add("successfully logged in as " + account.Username, Severity.Success);
+
+            StateManager.CurrentUser = account;
+
+            nav.NavigateTo("/");
+        }
+    }
 }

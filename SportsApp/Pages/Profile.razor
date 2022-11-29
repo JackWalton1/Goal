@@ -1,28 +1,50 @@
 ﻿@page "/profile"
+@using StateManager
+@inject NavigationManager nav
+@inject ISnackbar Snackbar
 
-<MudContainer Class="pa-8">
-    <MudStack>
-        <MudPaper Class="pa-4">
-            <!--TODO: REPLACE WITH CURRENT USER INFO-->
-            <MudContainer Class="d-flex justify-center align-center">
-                <MudStack Justify="Justify.Center" Spacing="0">
-                    <MudImage src="Images/profile_image.png" />
-                    <MudText Align="Align.Center" Typo="Typo.h3">jane doe</MudText>
-                    <MudText Align="Align.Center" Typo="Typo.subtitle1">Rome, Italy</MudText>
-                </MudStack>
-            </MudContainer>
-        </MudPaper>
+@if (StateManager.CurrentUser != null)
+{
+    <MudContainer Class="pa-8">
+        <MudStack>
+            <MudPaper Class="pa-4">
+                <!--TODO: REPLACE WITH CURRENT USER INFO
+                                add <MudImage src="Images/profile_image.png" />
+                                back in -->
+                <MudContainer Class="d-flex justify-center align-center">
+                    <MudStack Justify="Justify.Center" Spacing="0">
+                        <MudText Align="Align.Center" Typo="Typo.h3">@StateManager.CurrentUser.Username</MudText>
+                        <MudText Align="Align.Center" Typo="Typo.subtitle1">@StateManager.CurrentUser.Location.ToLower()</MudText>
+                    </MudStack>
+                </MudContainer>
+            </MudPaper>
 
-        <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">view what you're following</MudButton>
-        <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">view your tickets</MudButton>
-        <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">pay membership fees</MudButton>
-        <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">edit profile and location</MudButton>
-        <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">log last workout</MudButton>
-        <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">view/set activity goals</MudButton>
-        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
-    </MudStack>
-</MudContainer>
+            @if (StateManager.CurrentUser.AccessLevel == "Citizen")
+            {
+                <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">view what you're following</MudButton>
+                <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">view your tickets</MudButton>
+                <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">pay membership fees</MudButton>
+                <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true" OnClick="logout">log out</MudButton>
+            }
+            else if (StateManager.CurrentUser.AccessLevel == "Town Admin")
+            {
+                <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">create new admin account</MudButton>
+                <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">view your events</MudButton>
+                <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true" OnClick="logout">log out</MudButton>
+            }
+        </MudStack>
+    </MudContainer>
+}
 
 @code {
+    async Task logout()
+    {
+        Snackbar.Clear();
+        Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
 
+        Snackbar.Add("successfully logged out", Severity.Success);
+        nav.NavigateTo("/");
+
+        StateManager.CurrentUser = null;
+    }
 }

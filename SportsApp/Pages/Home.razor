@@ -1,10 +1,17 @@
 ﻿@page "/"
+@using StateManager
 
 <MudContainer Class="pa-8">
     <MudStack Spacing="16">
         <MudItem>
             <!--TODO: REPLACE WITH NAME OF CURRENT USER-->
-            <MudText Typo="Typo.h3" Align="Align.Center">hello</MudText>
+            @if (StateManager.CurrentUser == null)
+            {
+                <MudText Typo="Typo.h3" Align="Align.Center">hello</MudText>
+            } else
+            {
+                <MudText Typo="Typo.h3" Align="Align.Center">hello @StateManager.CurrentUser.Username.ToLower()</MudText>
+            }
             <MudText Align="Align.Center">welcome to goal - see your upcoming and recommended events here.</MudText>
         </MudItem>
 

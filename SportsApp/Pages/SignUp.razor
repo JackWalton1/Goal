@@ -7,10 +7,11 @@
 @using System.Text.Json
 @using System.Text.Json.Serialization
 @using Newtonsoft.Json
+@using StateManager
 @inject ISnackbar Snackbar
 @inject NavigationManager nav
 
-<MudContainer Class="pa-8">
+<MudContainer Class="px-8">
     <MudStack Spacing="8">
         <MudButton Class="align-content-start justify-content-start" Size="Size.Large" Href="/login" StartIcon="@Icons.Material.Filled.ChevronLeft">back to log in</MudButton>
 
@@ -20,17 +21,11 @@
         </MudItem>
 
         <MudTextField Align="center" Required="true" RequiredError="Username is required" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
-        <MudTextField Align="center" Required="true" RequiredError="Password is required" @bind-Value="Password" Label="password" Variant="Variant.Outlined"></MudTextField>
+        <MudTextField Align="center" Required="true" RequiredError="Password is required" @bind-Value="Password" Label="password" Variant="Variant.Outlined" 
+            InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="viewPassword" AdornmentAriaLabel="Show Password"></MudTextField>
         <MudTextField Align="center" Required="true" RequiredError="Location is required" @bind-Value="Location" Label="location" Variant="Variant.Outlined"></MudTextField>
 
-        <MudForm Class="d-flex justify-center">
-            <MudRadioGroup Required="true" @bind-SelectedOption="@AccessLevel">
-                <MudRadio Class="pr-16" Option="@("Citizen")">I am a citizen</MudRadio>
-                <MudRadio Class="pl-16" Option="@("Town Admin")">I am a town administrator</MudRadio>
-            </MudRadioGroup>
-        </MudForm>
-
-        <MudButton Disabled="@_processing" Variant="Variant.Filled" OnClick="referenceFetchEvent">
+        <MudButton OnClick="processAccountCreation" Disabled="@_processing" Variant="Variant.Filled">
             @if (_processing)
             {
                 <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
@@ -41,12 +36,11 @@
                 <MudText>create account</MudText>
             }
         </MudButton>
-
-        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
     </MudStack>
 </MudContainer>
 
 @code {
+    // TODO: make create account screen only allow creation of citizen accounts
 
     public string Username { get; set; }
     public string Password { get; set; }
@@ -55,84 +49,41 @@
 
     private bool _processing = false;
 
-    public void referenceCreateAccount()
+    bool isShow;
+    InputType PasswordInput = InputType.Password;
+    string PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
+
+    void viewPassword()
     {
-        UserDatabaseManagement userdatabasemanagment = new UserDatabaseManagement();
-        userdatabasemanagment.createAccount();
+        @if (isShow)
+        {
+            isShow = false;
+            PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
+            PasswordInput = InputType.Password;
+        }
+        else
+        {
+            isShow = true;
+            PasswordInputIcon = Icons.Material.Filled.Visibility;
+            PasswordInput = InputType.Text;
+        }
     }
 
-    public void referenceUpdateAccount()
-    {
-        UserDatabaseManagement userdatabasemanagment = new UserDatabaseManagement();
-        userdatabasemanagment.updateAccount();
-    }
-
-    public void referenceFetchAccount()
-    {
-        UserDatabaseManagement userdatabasemanagment = new UserDatabaseManagement();
-        var account = userdatabasemanagment.fetchAccount();
-    }
-
-    public void referenceCreateEvent()
-    {
-        EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
-        eventDatabaseManagement.createEvent();
-    }
-
-    public void referenceUpdateEvent()
-    {
-        EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
-        eventDatabaseManagement.updateEvent();
-    }
-
-    public void referenceFetchEvent()
-    {
-        EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
-        var eventModel = eventDatabaseManagement.fetchEvent();
-    }
-
-    async Task ProcessSomething()
+    async Task processAccountCreation()
     {
         _processing = true;
-        await Task.Delay(2000);
+        await Task.Delay(1000);
         Snackbar.Clear();
         Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
-        startConnection();
-        Snackbar.Add("account successfully created");
-        nav.NavigateTo("/");
+
+        UserDatabaseManagement userDatabaseManagement = new UserDatabaseManagement();
+        userDatabaseManagement.createAccount(Username, Password, Location, "Citizen");
+
+        StateManager.CurrentUser = await userDatabaseManagement.fetchAccount(Username, Password);
+
+        Snackbar.Add("account successfully created", Severity.Success);
         _processing = false;
+        nav.NavigateTo("/");
     }
-
-    public async void startConnection()
-    {
-        string connectionString = "mongodb+srv://cchannui:cchannui@cluster0.zjtdqmq.mongodb.net/test";
-        string databaseName = "sports_app";
-        string collectionName = "users";
-
-        bool isValid = false;
-
-        // Establish connection to MongoDB.
-        var client = new MongoClient(connectionString);
-        var db = client.GetDatabase(databaseName);
-        var collection = db.GetCollection<UserModel>(collectionName);
-
-        // Create new UserModel object.
-        var user = new UserModel { Username = Username, Password = Password, Location = Location, AccessLevel = AccessLevel};
-
-        // Insert UserModel object into MongoDB.
-        if (user.Username != null || user.Password != null || user.Location != null || user.AccessLevel != null)
-        {
-            await collection.InsertOneAsync(user);
-        }
-
-        // Locate document with Username field equal to "carter2020"
-        var results = await collection.Find(document => document.Username == "carter2020").SingleAsync();
-
-        if (results.Password == "testpass")
-        {
-            isValid = true;
-        }
-
-    }
-
+ 
 }
