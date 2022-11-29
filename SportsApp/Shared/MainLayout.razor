@@ -5,14 +5,21 @@
 <MudSnackbarProvider />
 <MudLayout>
     <MudAppBar Style="@($"color:{Colors.Grey.Darken3}; background:{Colors.Grey.Lighten2};")" Fixed="true" Dense="true" Bottom="true">
-        <MudNavLink Class="justify-content-center" Href="/" Icon="@Icons.Filled.Home"></MudNavLink>
-        <MudNavLink Href="/discover" Icon="@Icons.Filled.Explore"></MudNavLink>
-        <MudNavLink Href="/search" Icon="@Icons.Filled.Search"></MudNavLink>
         @if (StateManager.CurrentUser == null)
         {
+            <MudNavLink Href="/" Icon="@Icons.Filled.Home"></MudNavLink>
+            <MudNavLink Href="/discover" Icon="@Icons.Filled.Explore"></MudNavLink>
+            <MudNavLink Href="/search" Icon="@Icons.Filled.Search"></MudNavLink>
             <MudNavLink Href="/login" Icon="@Icons.Filled.Person"></MudNavLink>
-        } else
+        } else if (StateManager.CurrentUser.AccessLevel == "Citizen")
         {
+            <MudNavLink Href="/" Icon="@Icons.Filled.Home"></MudNavLink>
+            <MudNavLink Href="/discover" Icon="@Icons.Filled.Explore"></MudNavLink>
+            <MudNavLink Href="/search" Icon="@Icons.Filled.Search"></MudNavLink>
+            <MudNavLink Href="/profile" Icon="@Icons.Filled.Person"></MudNavLink>
+        } else {
+            <MudNavLink Href="/" Icon="@Icons.Filled.Home"></MudNavLink>
+            <MudNavLink Href="/createEvent" Icon="@Icons.Filled.Create"></MudNavLink>
             <MudNavLink Href="/profile" Icon="@Icons.Filled.Person"></MudNavLink>
         }
     </MudAppBar>

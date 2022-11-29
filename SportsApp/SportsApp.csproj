@@ -77,9 +77,4 @@
     <ItemGroup>
       <Folder Include="Data\" />
     </ItemGroup>
-    <ItemGroup>
-      <None Update="Pages\MapTest.html">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
-    </ItemGroup>
 </Project>
