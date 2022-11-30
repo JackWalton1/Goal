@@ -63,6 +63,7 @@
     <ItemGroup>
       <Content Remove="wwwroot\image_template1.jpg" />
       <Content Remove="wwwroot\image_template2.jpg" />
+      <Content Remove="wwwroot\MapTest.html" />
     </ItemGroup>
     <ItemGroup>
       <None Remove="MudBlazor" />
@@ -74,5 +75,8 @@
       <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
       <PackageReference Include="Stripe.net" Version="41.1.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="wwwroot\MapTest.html" />
     </ItemGroup>
 </Project>
