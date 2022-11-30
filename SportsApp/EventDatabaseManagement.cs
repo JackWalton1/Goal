@@ -7,7 +7,7 @@ namespace EventDatabaseManagement
 {
 	public class EventDatabaseManagement
 	{
-        public async void createEvent(string title, string location, string date, string description)
+        public async void createEvent(string title, string icon, string imageURL, string location, string date, string description)
         {
 
             using (var client = new HttpClient())
@@ -17,6 +17,8 @@ namespace EventDatabaseManagement
                 var newEvent = new EventModel()
                 {
                     Title = title,
+                    Icon = icon,
+                    ImageURL = imageURL,
                     Location = location,
                     Date = date,
                     Description = description

@@ -13,6 +13,10 @@ public class EventModel
     [Required]
     public string Title { get; set; }
     [Required]
+    public string Icon { get; set; }
+    [Required]
+    public string ImageURL { get; set; }
+    [Required]
     public string Location { get; set; }
     [Required]
     public string Date { get; set; }

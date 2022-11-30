@@ -20,11 +20,14 @@
             <MudText Align="Align.Center">* = required field</MudText>
         </MudItem>
 
-        <MudTextField Align="center" Required="true" RequiredError="Username is required" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
-        <MudTextField Align="center" Required="true" RequiredError="Password is required" @bind-Value="Password" Label="password" Variant="Variant.Outlined" 
+        <MudTextField Align="center" Required="true" RequiredError="sername is required" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
+        <MudTextField Align="center" Required="true" RequiredError="password is required" @bind-Value="Password" Label="password" Variant="Variant.Outlined" 
             InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="viewPassword" AdornmentAriaLabel="Show Password"></MudTextField>
-        <MudTextField Align="center" Required="true" RequiredError="Location is required" @bind-Value="Location" Label="location" Variant="Variant.Outlined"></MudTextField>
-
+        <MudTextField Align="center" Required="true" RequiredError="location is required" @bind-Value="Location" Label="location" Variant="Variant.Outlined"></MudTextField>
+        @if (StateManager.CurrentUser != null && StateManager.CurrentUser.AccessLevel == "Town Admin")
+        {
+            <MudTextField Align="center" Required="true" RequiredError="center is required" @bind-Value="Center" Label="your center" Variant="Variant.Outlined"></MudTextField>
+        }
         <MudButton OnClick="processAccountCreation" Disabled="@_processing" Variant="Variant.Filled">
             @if (_processing)
             {
@@ -46,6 +49,7 @@
     public string Password { get; set; }
     public string Location { get; set; }
     public string AccessLevel { get; set; }
+    public string Center { get; set; }
 
     private bool _processing = false;
 
@@ -80,7 +84,7 @@
 
         if (StateManager.CurrentUser != null && StateManager.CurrentUser.AccessLevel == "Town Admin")
         {
-            userDatabaseManagement.createAccount(Username, Password, Location, "Town Admin");
+            userDatabaseManagement.createAccount(Username, Password, Location, "Town Admin", Center);
         } else
         {
             userDatabaseManagement.createAccount(Username, Password, Location, "Citizen");

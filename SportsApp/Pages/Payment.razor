@@ -1,4 +1,6 @@
 @page "/payment"
+@using StateManager
+@inject NavigationManager nav
 
 <MudContainer>
     <MudStack Spacing="4">
@@ -30,7 +32,7 @@
                         </MudList>
                     </MudCardContent>
                     <MudCardActions Class="d-flex justify-center">
-                        <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" Style="width:50%;">Start Now</MudButton>
+                        <MudButton OnClick="payAnnual" Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" Style="width:50%;">Start Now</MudButton>
                     </MudCardActions>
                 </MudCard>
             </MudItem>
@@ -59,7 +61,7 @@
                         </MudList>
                     </MudCardContent>
                     <MudCardActions Class="d-flex justify-center">
-                        <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" Style="width:50%;">Start Now</MudButton>
+                        <MudButton OnClick="payAsYouGo" Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" Style="width:50%;">Start Now</MudButton>
                     </MudCardActions>
                 </MudCard>
             </MudItem>
@@ -88,11 +90,30 @@
                         </MudList>
                     </MudCardContent>
                     <MudCardActions Class="d-flex justify-center">
-                        <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" Style="width:50%;">Start Now</MudButton>
+                        <MudButton OnClick="paySapphire" Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" Style="width:50%;">Start Now</MudButton>
                     </MudCardActions>
                 </MudCard>
             </MudItem>
         </MudGrid>
-        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
     </MudStack>
 </MudContainer>
+
+@code{
+    async Task payAnnual(){
+        StateManager.MembershipSelection = "annual";
+        nav.NavigateTo("/membership");
+    }
+
+    async Task payAsYouGo()
+    {
+        StateManager.MembershipSelection = "pay-as-you-go";
+        nav.NavigateTo("/membership");
+    }
+
+    async Task paySapphire()
+    {
+        StateManager.MembershipSelection = "sapphire";
+        nav.NavigateTo("/membership");
+    }
+}
+

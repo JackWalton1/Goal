@@ -23,7 +23,7 @@
             {
                 <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">view what you're following</MudButton>
                 <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">view your tickets</MudButton>
-                <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">pay membership fees</MudButton>
+                <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true" Href="/payment">pay membership fees</MudButton>
                 <MudButton Size="Size.Large" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true" OnClick="logout">log out</MudButton>
             }
             else if (StateManager.CurrentUser.AccessLevel == "Town Admin")

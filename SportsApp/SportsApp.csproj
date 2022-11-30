@@ -73,8 +73,6 @@
       <PackageReference Include="MudBlazor" Version="6.0.17" />
       <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Data\" />
+      <PackageReference Include="Stripe.net" Version="41.1.0" />
     </ItemGroup>
 </Project>

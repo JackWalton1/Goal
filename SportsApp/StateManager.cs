@@ -7,5 +7,7 @@ namespace StateManager
     public static class StateManager
     {
         public static UserModel CurrentUser { get; set; }
+        public static string MembershipSelection { get; set; }
+        public static string CurrentEvent { get; set; }
     }
 }

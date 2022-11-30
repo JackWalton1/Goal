@@ -1,37 +1,76 @@
 ﻿@using System.ComponentModel.DataAnnotations
+@using EventDatabaseManagement
+@inject NavigationManager nav
+@inject ISnackbar Snackbar
 @page "/createEvent"
 
-<MudStack Spacing="4">
-    <MudItem>
-        <MudText Typo="Typo.h3" Align="Align.Center">Create event</MudText>
-        <MudText Align="Align.Center">Upload a new event below.</MudText>
-    </MudItem>
-    <MudCard>
-        <MudForm>
-            <MudCardContent>
-                <MudTextField For="@(() => model.String)" Label="Event Title" />
-                <MudTextField For="@(() => model.String)" Label="Event Description" />
-                <MudDatePicker For="@(() => model.Date)" Label="Date" />
-            </MudCardContent>
-        </MudForm>
-        <MudCardActions>
-            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Create Event</MudButton>
-        </MudCardActions>
-    </MudCard>
-    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
-</MudStack>
+<MudContainer Class="px-8">
+    <MudStack Spacing="4">
+        <MudItem>
+            <MudText Typo="Typo.h3" Align="Align.Center">create event</MudText>
+            <MudText Align="Align.Center">upload a new event below.</MudText>
+        </MudItem>
+        <MudCard>
+            <MudForm>
+                <!-- TODO: add photo field -->
+                <MudCardContent>
+                    <MudTextField @bind-Value="title" Label="event title" />
+                    <MudRadioGroup @bind-SelectedOption="@icon">
+                        <MudRadio Option="@("@Icons.Filled.SportsSoccer")">Socccer</MudRadio>
+                        <MudRadio Option="@("@Icons.Filled.SportsTennis")">Tennis</MudRadio>
+                        <MudRadio Option="@("@Icons.Filled.SportsRugby")">Rugby</MudRadio>
+                        <MudRadio Option="@("@Icons.Filled.SportsGolf")">Golf</MudRadio>
+                        <MudRadio Option="@("@Icons.Filled.SportsCricket")">Cricket</MudRadio>
+                        <MudRadio Option="@("@Icons.Filled.SportsGymnastics")">Gymnastics</MudRadio>
+                        <MudRadio Option="@("@Icons.Filled.SportsHockey")">Hockey</MudRadio>
+                        <MudRadio Option="@("@Icons.Filled.SportsMotorsports")">Motorsports</MudRadio>
+                    </MudRadioGroup>
+                    <MudTextField @bind-Value="imageURL" Label="event image url" />
+                    <MudTextField @bind-Value="location" Label="event location" />
+                    <MudTextField @bind-Value="description" Label="event description" />
+                    <MudDatePicker @bind-Value="date" Label="event date" />
+                </MudCardContent>
+            </MudForm>
+            <MudCardActions>
+                <MudButton OnClick="processEventCreation" Disabled="@processing" Variant="Variant.Filled">
+                    @if (processing)
+                    {
+                        <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                        <MudText Class="ms-2">Processing</MudText>
+                    }
+                    else
+                    {
+                        <MudText>create event</MudText>
+                    }
+                </MudButton>
+            </MudCardActions>
+        </MudCard>
+    </MudStack>
+</MudContainer>
 
 @code {
-    DisplayNameLabelClass model = new();
+    // TODO: fix date input
+    private string title { get; set; }
+    private string icon { get; set; }
+    private string imageURL { get; set; }
+    private string location { get; set; }
+    private string date { get; set; }
+    private string description { get; set; }
 
-    public class DisplayNameLabelClass
+    private bool processing = false;
+
+    async Task processEventCreation()
     {
-        [Label("Date LabelAttribute")]
-        public DateTime? Date { get; set; }
-        [Label("Boolean LabelAttribute")]
-        public bool Boolean { get; set; }
-        [Label("String LabelAttribute")]
-        public string String { get; set; }
-    }
+        processing = true;
+        await Task.Delay(500);
+        Snackbar.Clear();
+        Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
 
+        EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
+        eventDatabaseManagement.createEvent(title, icon, imageURL, location, date, description);
+
+        Snackbar.Add("event successfully created", Severity.Success);
+        processing = false;
+        nav.NavigateTo("/");
+    }
 }
