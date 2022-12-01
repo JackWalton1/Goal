@@ -8,6 +8,6 @@ namespace StateManager
     {
         public static UserModel CurrentUser { get; set; }
         public static string MembershipSelection { get; set; }
-        public static string CurrentEvent { get; set; }
+        public static EventModel CurrentEvent { get; set; }
     }
 }

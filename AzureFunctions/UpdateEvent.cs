@@ -40,7 +40,8 @@ namespace AzureFunctions
             dynamic data = JsonConvert.DeserializeObject(requestBody);
 
             // Extract updated event information from JSON.
-            string new_location = data.Location;
+            string new_venue_name = data.VenueName;
+            string new_venue_address = data.VenueAddress;
             string new_date = data.Date;
             string new_description = data.Description;
 
@@ -50,7 +51,8 @@ namespace AzureFunctions
             // Establish filter and update definitions.
             var filterDefinition = Builders<EventModel>.Filter.Eq(document => document.Id, submitted_id);
             var updateDefinition = Builders<EventModel>.Update
-                .Set(document => document.Location, new_location)
+                .Set(document => document.VenueName, new_venue_name)
+                .Set(document => document.VenueAddress, new_venue_address)
                 .Set(document => document.Date, new_date)
                 .Set(document => document.Description, new_description);
 

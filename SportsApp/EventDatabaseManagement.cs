@@ -2,12 +2,14 @@
 using SportsApp;
 using System.Text;
 using Newtonsoft.Json;
+using MongoDB.Bson;
+using System.Net.Http.Json;
 
 namespace EventDatabaseManagement
 {
 	public class EventDatabaseManagement
 	{
-        public async void createEvent(string title, string icon, string imageURL, string location, string date, string description)
+        public async void createEvent(string title, string icon, string imageURL, string venueName, string venueAddress, string date, string description)
         {
 
             using (var client = new HttpClient())
@@ -19,7 +21,8 @@ namespace EventDatabaseManagement
                     Title = title,
                     Icon = icon,
                     ImageURL = imageURL,
-                    Location = location,
+                    VenueName = venueName,
+                    VenueAddress = venueAddress,
                     Date = date,
                     Description = description
                 };
@@ -37,11 +40,8 @@ namespace EventDatabaseManagement
         public async Task<EventModel> fetchEvent(string id)
         {
             using (var client = new HttpClient())
-            {
-                // Test/temp variables.
-                // var id = "6381de942c54e6d4762432c3";
-
-                var endpoint = new Uri($"https://sportsfunctionapp.azurewebsites.net/api/FetchAccount?id={id}");
+            { 
+                var endpoint = new Uri($"https://sportsfunctionapp.azurewebsites.net/api/FetchEvent?id={id}");
 
                 // Make GET request.
                 var response = await client.GetAsync(endpoint);
@@ -52,7 +52,23 @@ namespace EventDatabaseManagement
             }
         }
 
-        public async void updateEvent(string event_id, string new_location, string new_date, string new_description)
+        public async Task<EventModel> fetchAllEvents()
+        {
+            using (var client = new HttpClient())
+            {
+                var endpoint = new Uri($"https://sportsfunctionapp.azurewebsites.net/api/FetchAllEvents");
+
+                // Make GET request.
+                var response = await client.GetAsync(endpoint);
+                System.Diagnostics.Debug.WriteLine("result in local funciton: " + response.Content);
+                var result = response.Content.ReadAsStringAsync().Result;
+
+                // Deserialize GET request.
+                return JsonConvert.DeserializeObject<EventModel>(result);
+            }
+        }
+
+        public async void updateEvent(string event_id, string new_venue_name, string new_venue_address, string new_date, string new_description)
         {
             using (var client = new HttpClient())
             {
@@ -61,7 +77,8 @@ namespace EventDatabaseManagement
                 // Create new EventModel object that contains the updated event info.
                 var updatedEvent = new EventModel()
                 {
-                    Location = new_location,
+                    VenueName = new_venue_name,
+                    VenueAddress = new_venue_address,
                     Date = new_date,
                     Description = new_description
                 };

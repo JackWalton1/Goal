@@ -36,11 +36,21 @@ namespace AzureFunctions
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
 
+
             // Create new EventModel object.
-            var eventModel = new EventModel { Title = data.Title, Location = data.Location, Date = data.Date, Description = data.Description };
+            var eventModel = new EventModel { 
+                Title = data.Title, 
+                Icon = data.Icon,
+                ImageURL = data.ImageURL,
+                VenueName = data.VenueName,
+                VenueAddress = data.VenueAddress,
+                Date = data.Date,
+                Description = data.Description,
+            };
 
             // Insert UserModel object into MongoDB.
-            if (eventModel.Title != null || eventModel.Location != null || eventModel.Date != null || eventModel.Description != null)
+            if (eventModel.Title != null || eventModel.Icon != null || eventModel.ImageURL != null || eventModel.VenueName != null || 
+                eventModel.VenueAddress != null || eventModel.Date != null || eventModel.Description != null)
             {
                 await collection.InsertOneAsync(eventModel);
             }

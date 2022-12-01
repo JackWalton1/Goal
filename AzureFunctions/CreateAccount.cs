@@ -36,7 +36,14 @@ namespace AzureFunctions
             dynamic data = JsonConvert.DeserializeObject(requestBody);
 
             // // Create new UserModel object.
-            var user = new UserModel { Username = data.Username, Password = data.Password, Location = data.Location, AccessLevel = data.AccessLevel };
+            var user = new UserModel { 
+                Username = data.Username, 
+                Password = data.Password, 
+                Location = data.Location, 
+                AccessLevel = data.AccessLevel,
+                VenueName = data.VenueName,
+                VenueAddress = data.VenueAddress,
+            };
 
             // Insert UserModel object into MongoDB.
             if (user.Username != null || user.Password != null || user.Location != null || user.AccessLevel != null)

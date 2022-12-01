@@ -17,7 +17,9 @@ public class EventModel
     [Required]
     public string ImageURL { get; set; }
     [Required]
-    public string Location { get; set; }
+    public string VenueName { get; set; }
+    [Required]
+    public string VenueAddress { get; set; }
     [Required]
     public string Date { get; set; }
     [Required]

@@ -8,7 +8,7 @@ namespace UserDatabaseManagement
 {
 	public class UserDatabaseManagement
 	{
-        public async void createAccount(string username, string password, string location, string access_level, string center=null)
+        public async void createAccount(string username, string password, string location, string access_level, string VenueName, string VenueAddress)
         {
 
             using (var client = new HttpClient())
@@ -21,7 +21,8 @@ namespace UserDatabaseManagement
                     Password = password,
                     Location = location,
                     AccessLevel = access_level,
-                    Center = center
+                    VenueName = VenueName,
+                    VenueAddress = VenueAddress
                 };
 
                 // Serialize JSON user credentials.

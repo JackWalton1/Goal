@@ -1,5 +1,6 @@
 ﻿@using System.ComponentModel.DataAnnotations
 @using EventDatabaseManagement
+@using StateManager
 @inject NavigationManager nav
 @inject ISnackbar Snackbar
 @page "/createEvent"
@@ -14,9 +15,8 @@
             <MudForm>
                 <!-- TODO: add photo field -->
                 <MudCardContent>
-                    <MudTextField @bind-Value="title" Label="event title" />
                     <MudRadioGroup @bind-SelectedOption="@icon">
-                        <MudRadio Option="@("@Icons.Filled.SportsSoccer")">Socccer</MudRadio>
+                        <MudRadio Option="@("@Icons.Filled.SportsSoccer")">Soccer</MudRadio>
                         <MudRadio Option="@("@Icons.Filled.SportsTennis")">Tennis</MudRadio>
                         <MudRadio Option="@("@Icons.Filled.SportsRugby")">Rugby</MudRadio>
                         <MudRadio Option="@("@Icons.Filled.SportsGolf")">Golf</MudRadio>
@@ -25,9 +25,11 @@
                         <MudRadio Option="@("@Icons.Filled.SportsHockey")">Hockey</MudRadio>
                         <MudRadio Option="@("@Icons.Filled.SportsMotorsports")">Motorsports</MudRadio>
                     </MudRadioGroup>
+                    <MudTextField @bind-Value="title" Label="event title" />
                     <MudTextField @bind-Value="imageURL" Label="event image url" />
-                    <MudTextField @bind-Value="location" Label="event location" />
-                    <MudTextField @bind-Value="description" Label="event description" />
+                    <MudTextField @bind-Value="venueName" Label="event venue name" />
+                    <MudTextField @bind-Value="venueAddress" Label="event venue address" />
+                    <MudTextField @bind-Value="description" Label="event description" Lines="5" />
                     <MudDatePicker @bind-Value="date" Label="event date" />
                 </MudCardContent>
             </MudForm>
@@ -53,8 +55,9 @@
     private string title { get; set; }
     private string icon { get; set; }
     private string imageURL { get; set; }
-    private string location { get; set; }
-    private string date { get; set; }
+    private string venueName = StateManager.CurrentUser.VenueName;
+    private string venueAddress = StateManager.CurrentUser.VenueAddress;
+    DateTime? date = DateTime.Today;
     private string description { get; set; }
 
     private bool processing = false;
@@ -67,7 +70,7 @@
         Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
 
         EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
-        eventDatabaseManagement.createEvent(title, icon, imageURL, location, date, description);
+        eventDatabaseManagement.createEvent(title, icon, imageURL, venueName, venueAddress, date.ToString(), description);
 
         Snackbar.Add("event successfully created", Severity.Success);
         processing = false;

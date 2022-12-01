@@ -8,15 +8,12 @@ public class UserModel
 {
     [Required]
     [BsonId]
-	[BsonRepresentation(BsonType.ObjectId)]
-	public string Id { get; set; }
-    [Required]
-    public string Username { get; set; }
-    [Required]
-    public string Password { get; set; }
-    [Required]
-    public string Location { get; set; }
-    [Required]
-    public string AccessLevel { get; set; }
+    [BsonRepresentation(BsonType.ObjectId)] public string Id { get; set; }
+    [Required] public string Username { get; set; }
+    [Required] public string Password { get; set; }
+    [Required] public string Location { get; set; }
+    [Required] public string AccessLevel { get; set; }
+    [Required] public string VenueName { get; set; }
+    [Required] public string VenueAddress { get; set; }
 }
 

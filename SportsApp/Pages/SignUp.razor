@@ -20,13 +20,14 @@
             <MudText Align="Align.Center">* = required field</MudText>
         </MudItem>
 
-        <MudTextField Align="center" Required="true" RequiredError="sername is required" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
+        <MudTextField Align="center" Required="true" RequiredError="username is required" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
         <MudTextField Align="center" Required="true" RequiredError="password is required" @bind-Value="Password" Label="password" Variant="Variant.Outlined" 
             InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="viewPassword" AdornmentAriaLabel="Show Password"></MudTextField>
         <MudTextField Align="center" Required="true" RequiredError="location is required" @bind-Value="Location" Label="location" Variant="Variant.Outlined"></MudTextField>
         @if (StateManager.CurrentUser != null && StateManager.CurrentUser.AccessLevel == "Town Admin")
         {
-            <MudTextField Align="center" Required="true" RequiredError="center is required" @bind-Value="Center" Label="your center" Variant="Variant.Outlined"></MudTextField>
+            <MudTextField Align="center" Required="true" RequiredError="venue name is required" @bind-Value="VenueName" Label="your venue's name" Variant="Variant.Outlined"></MudTextField>
+            <MudTextField Align="center" Required="true" RequiredError="venue address is required" @bind-Value="VenueAddress" Label="your venue's address" Variant="Variant.Outlined"></MudTextField>
         }
         <MudButton OnClick="processAccountCreation" Disabled="@_processing" Variant="Variant.Filled">
             @if (_processing)
@@ -49,7 +50,8 @@
     public string Password { get; set; }
     public string Location { get; set; }
     public string AccessLevel { get; set; }
-    public string Center { get; set; }
+    public string VenueName { get; set; }
+    public string VenueAddress { get; set; }
 
     private bool _processing = false;
 
@@ -84,10 +86,10 @@
 
         if (StateManager.CurrentUser != null && StateManager.CurrentUser.AccessLevel == "Town Admin")
         {
-            userDatabaseManagement.createAccount(Username, Password, Location, "Town Admin", Center);
+            userDatabaseManagement.createAccount(Username, Password, Location, "Town Admin", VenueName, VenueAddress);
         } else
         {
-            userDatabaseManagement.createAccount(Username, Password, Location, "Citizen");
+            userDatabaseManagement.createAccount(Username, Password, Location, "Citizen", null, null);
         }
 
         StateManager.CurrentUser = await userDatabaseManagement.fetchAccount(Username, Password);
