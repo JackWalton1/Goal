@@ -33,12 +33,14 @@ namespace AzureFunctions
             // Establish connection to MongoDB.
             var client = new MongoClient(connectionString);
             var db = client.GetDatabase(databaseName);
-            var result = db.GetCollection<EventModel>(collectionName).Find(p => true).ToEnumerable<EventModel>();
+            var collection = db.GetCollection<EventModel>(collectionName);
+
+            var events = await collection.Find(_ => true).ToListAsync();
 
             // Validate response.
-            if (result != null)
+            if (events != null)
             {
-                return new OkObjectResult(result);
+                return new OkObjectResult(events);
             } else
             {
                 // Return 403 Forbidden status code

@@ -60,7 +60,6 @@ namespace EventDatabaseManagement
 
                 // Make GET request.
                 var response = await client.GetAsync(endpoint);
-                System.Diagnostics.Debug.WriteLine("result in local funciton: " + response.Content);
                 var result = response.Content.ReadAsStringAsync().Result;
 
                 // Deserialize GET request.
