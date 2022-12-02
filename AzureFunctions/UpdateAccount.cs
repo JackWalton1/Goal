@@ -13,7 +13,7 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using MongoDB.Driver;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-
+using System.Collections.Generic;
 
 namespace AzureFunctions
 {
@@ -40,7 +40,7 @@ namespace AzureFunctions
             dynamic data = JsonConvert.DeserializeObject(requestBody);
 
             // Extract updated information from JSON.
-            string[] new_events_followed = data.EventsFollowed;
+            List<string> new_events_followed = data.EventsFollowed;
 
             // Retrieve username from query.
             string submitted_username = req.Query["username"];

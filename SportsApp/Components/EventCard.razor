@@ -1,4 +1,4 @@
-﻿@using EventDatabaseManagement
+﻿@using UserDatabaseManagement
 ﻿@using StateManager
 @inject NavigationManager nav
 
@@ -38,8 +38,10 @@
 
     async Task updateFollow()
     {
-        //EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
-        //eventDatabaseManagement.updateAccount(StateManager.CurrentUser.Username, UPDATE ARRAY HERE)
+        // UserDatabaseManagement userDatabaseManagement = new UserDatabaseManagement();
+        // StateManager.CurrentUser.EventsFollowed.Add(currentEvent.Id);
+        // userDatabaseManagement.updateAccount(StateManager.CurrentUser.Username, StateManager.CurrentUser.EventsFollowed);
+
         if (following == false)
         {
             following = true;

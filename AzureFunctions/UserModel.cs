@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
@@ -15,6 +16,6 @@ public class UserModel
     [Required] public string AccessLevel { get; set; }
     [Required] public string VenueName { get; set; }
     [Required] public string VenueAddress { get; set; }
-    [Required] public string[] EventsFollowed { get; set; }
+    [Required] public List<string> EventsFollowed { get; set; }
 }
 
