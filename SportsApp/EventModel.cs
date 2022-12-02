@@ -24,5 +24,7 @@ public class EventModel
     public string Date { get; set; }
     [Required]
     public string Description { get; set; }
+    [Required]
+    public int FollowerCount { get; set; }
 }
 

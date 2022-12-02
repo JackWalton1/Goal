@@ -38,14 +38,15 @@ namespace AzureFunctions
 
 
             // Create new EventModel object.
-            var eventModel = new EventModel { 
-                Title = data.Title, 
+            var eventModel = new EventModel {
+                Title = data.Title,
                 Icon = data.Icon,
                 ImageURL = data.ImageURL,
                 VenueName = data.VenueName,
                 VenueAddress = data.VenueAddress,
                 Date = data.Date,
                 Description = data.Description,
+                FollowerCount = data.FollowerCount
             };
 
             // Insert UserModel object into MongoDB.

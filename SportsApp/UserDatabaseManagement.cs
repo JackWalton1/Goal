@@ -51,7 +51,7 @@ namespace UserDatabaseManagement
             }
         }
 
-        public async void updateAccount(string username, string new_password, string new_location)
+        public async void updateAccount(string username, string[] new_events_followed)
         {
             using (var client = new HttpClient())
             {
@@ -60,8 +60,7 @@ namespace UserDatabaseManagement
                 // Create new UserModel object that contains the updated user info.
                 var updatedUser = new UserModel()
                 {
-                    Password = new_password,
-                    Location = new_location,
+                    EventsFollowed = new_events_followed
                 };
 
                 // Serialize JSON updated user information.

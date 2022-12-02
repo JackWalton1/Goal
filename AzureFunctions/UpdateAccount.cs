@@ -40,8 +40,7 @@ namespace AzureFunctions
             dynamic data = JsonConvert.DeserializeObject(requestBody);
 
             // Extract updated information from JSON.
-            string new_password = data.Password;
-            string new_location = data.Location;
+            string[] new_events_followed = data.EventsFollowed;
 
             // Retrieve username from query.
             string submitted_username = req.Query["username"];
@@ -49,8 +48,7 @@ namespace AzureFunctions
             // Establish filter and update definitions.
             var filterDefinition = Builders<UserModel>.Filter.Eq(document => document.Username, submitted_username);
             var updateDefinition = Builders<UserModel>.Update
-                .Set(document => document.Password, new_password)
-                .Set(document => document.Location, new_location);
+                .Set(document => document.EventsFollowed, new_events_followed);
 
             var optionsDefinition = new FindOneAndUpdateOptions<UserModel, UserModel>()
             {

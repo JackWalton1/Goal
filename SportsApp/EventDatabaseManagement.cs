@@ -9,7 +9,7 @@ namespace EventDatabaseManagement
 {
 	public class EventDatabaseManagement
 	{
-        public async void createEvent(string title, string icon, string imageURL, string venueName, string venueAddress, string date, string description)
+        public async void createEvent(string title, string icon, string imageURL, string venueName, string venueAddress, string date, string description, int follower_count)
         {
 
             using (var client = new HttpClient())
@@ -24,7 +24,8 @@ namespace EventDatabaseManagement
                     VenueName = venueName,
                     VenueAddress = venueAddress,
                     Date = date,
-                    Description = description
+                    Description = description,
+                    FollowerCount = follower_count
                 };
 
                 // Serialize JSON event information.
