@@ -20,7 +20,6 @@
         else
         {
             <MudButton Class="align-content-start justify-content-start" Size="Size.Large" Href="/login" StartIcon="@Icons.Material.Filled.ChevronLeft">back to log in</MudButton>
-
         }
         <MudItem>
             <MudText Typo="Typo.h3" Align="Align.Center">create account</MudText>
@@ -92,10 +91,10 @@
 
         if (StateManager.CurrentUser != null && StateManager.CurrentUser.AccessLevel == "Town Admin")
         {
-            userDatabaseManagement.createAccount(Username, Password, Location, "Town Admin", VenueName, VenueAddress, null);
+            userDatabaseManagement.createAccount(Username, Password, Location, "Town Admin", VenueName, VenueAddress, null, 0);
         } else
         {
-            userDatabaseManagement.createAccount(Username, Password, Location, "Citizen", null, null, null);
+            userDatabaseManagement.createAccount(Username, Password, Location, "Citizen", null, null, null, 0);
         }
 
         StateManager.CurrentUser = await userDatabaseManagement.fetchAccount(Username, Password);

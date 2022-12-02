@@ -16,5 +16,6 @@ public class UserModel
     [Required] public string VenueName { get; set; }
     [Required] public string VenueAddress { get; set; }
     [Required] public List<string> EventsFollowed { get; set; }
+    [Required] public int FollowCount { get; set; }
 }
 
