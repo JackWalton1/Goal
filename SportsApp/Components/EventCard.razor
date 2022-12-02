@@ -1,23 +1,18 @@
-<<<<<<< HEAD
 ﻿@using EventDatabaseManagement
-=======
 ﻿@using StateManager
->>>>>>> 3e1ba0ae7ac98465c9cbf55bb3fe22d92bde6235
 
 <MudCard Elevation="25" Class="d-flex pa-4 align-content-center rounded-lg">
     <MudStack>
         <MudItem Class="d-flex justify-space-between flex-grow-1">
-            <MudText Typo="Typo.h6" Align="Align.Left">@title</MudText>
-            <MudIcon Icon="@icon" Align="center" />
+            <MudText Typo="Typo.h6" Align="Align.Left">@currentEvent.Title</MudText>
+            <MudIcon Icon="@currentEvent.Icon" Align="center" />
         </MudItem>
-        <MudImage ObjectFit="ObjectFit.Cover" Class="rounded-lg" Src=@imageURL Width="300" Height="150" />
+        <MudImage ObjectFit="ObjectFit.Cover" Class="rounded-lg" Src=@currentEvent.ImageURL Width="300" Height="150" />
         <MudItem Class="d-flex justify-space-between flex-grow-1">
-            <MudText Typo="Typo.subtitle1" Align="Align.Left">@location</MudText>
-            <MudText Typo="Typo.subtitle1" Align="Align.Right">@date</MudText>
+            <MudText Typo="Typo.subtitle1" Align="Align.Left">@currentEvent.VenueName</MudText>
+            <MudText Typo="Typo.subtitle1" Align="Align.Right">@currentEvent.Date.Substring(0, currentEvent.Date.IndexOf(' '))</MudText>
         </MudItem>
-<<<<<<< HEAD
-        <MudButton OnClick="test" Variant=Variant.Filled Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Learn more</MudButton>
-=======
+        <MudButton Variant=Variant.Filled Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Learn more</MudButton>
         <MudButton Variant=Variant.Filled Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Learn more</MudButton>
         @if (StateManager.CurrentUser != null)
             {
@@ -32,56 +27,31 @@
                     }
             </MudButton>
             }
->>>>>>> 3e1ba0ae7ac98465c9cbf55bb3fe22d92bde6235
     </MudStack>
 </MudCard>
 
 @code {
-<<<<<<< HEAD
     [Parameter]
-    public string title { get; set; }
-    [Parameter]
-    public string icon { get; set; }
-    [Parameter]
-    public string imageURL { get; set; }
-    [Parameter]
-    public string location { get; set; }
-    [Parameter]
-    public string date { get; set; }
-
-    async Task test()
-    {
-        EventDatabaseManagement evm = new EventDatabaseManagement();
-        System.Diagnostics.Debug.WriteLine(evm.fetchAllEvents());
-    }
-}
-=======
-            [Parameter]
-            public string title { get; set; }
-            [Parameter]
-            public string icon { get; set; }
-            [Parameter]
-            public string imageURL { get; set; }
-            [Parameter]
-            public string location { get; set; }
-            [Parameter]
-            public string date { get; set; }
+    public EventModel currentEvent { get; set; }
 
     public bool following = false;
 
-        async Task updateFollow()
+    async Task updateFollow()
+    {
+        if (following == false)
         {
-            if (following == false)
-            {
-                following = true;
-            }
-            else
-            {
-                following = false;
-            }
-
-
-
+            following = true;
+        }
+        else
+        {
+            following = false;
         }
     }
->>>>>>> 3e1ba0ae7ac98465c9cbf55bb3fe22d92bde6235
+
+    async Task viewEvent()
+    {
+        EventDatabaseManagement evm = new EventDatabaseManagement();
+        var result = await evm.fetchAllEvents();
+        System.Diagnostics.Debug.WriteLine(result);
+    }
+}

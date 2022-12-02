@@ -1,5 +1,18 @@
-﻿<h3>EventCardDisplay</h3>
+﻿@using EventDatabaseManagement
+@using StateManager
+
+@if (StateManager.AllEvents != null)
+{
+    @foreach (EventModel eventItem in StateManager.AllEvents)
+    {
+        <SportsApp.Components.EventCard currentEvent=eventItem />
+    }
+}
 
 @code {
-
+    public static async Task getEvents()
+    {
+        EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
+        StateManager.AllEvents = await eventDatabaseManagement.fetchAllEvents();
+    }
 }

@@ -8,13 +8,11 @@
         @if (StateManager.CurrentUser == null)
         {
             <MudNavLink Href="/" Icon="@Icons.Filled.Home"></MudNavLink>
-            <MudNavLink Href="/discover" Icon="@Icons.Filled.Explore"></MudNavLink>
             <MudNavLink Href="/search" Icon="@Icons.Filled.Search"></MudNavLink>
             <MudNavLink Href="/login" Icon="@Icons.Filled.Person"></MudNavLink>
         } else if (StateManager.CurrentUser.AccessLevel == "Citizen")
         {
             <MudNavLink Href="/" Icon="@Icons.Filled.Home"></MudNavLink>
-            <MudNavLink Href="/discover" Icon="@Icons.Filled.Explore"></MudNavLink>
             <MudNavLink Href="/search" Icon="@Icons.Filled.Search"></MudNavLink>
             <MudNavLink Href="/profile" Icon="@Icons.Filled.Person"></MudNavLink>
         } else {

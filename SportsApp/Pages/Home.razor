@@ -19,23 +19,15 @@
             <MudText Typo="Typo.h4" Align="Align.Left">your upcoming events</MudText>
             <MudStack Row="true" Class="overflow-scroll">
                 <!--TODO: REPLACE WITH CONDITIONAL RENDERING FROM DATABASE-->
-                <SportsApp.Components.EventCardsSampleDisplay/>
+                <SportsApp.Components.EventCardDisplay/>
             </MudStack>
         </MudStack>     
-        
-        <!--Events/Centers followed-->
-        <MudStack Spacing="4">
-            <MudText Typo="Typo.h4" Align="Align.Left">events and centers you follow</MudText>
-            <MudStack Row="true" Class="overflow-scroll">
-                <!--TODO: REPLACE WITH CONDITIONAL RENDERING FROM DATABASE-->
-                <SportsApp.Components.EventCardsSampleDisplay />
-            </MudStack>
-        </MudStack>
-
-        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Translate" Color="Color.Primary" Class="ml-auto">Translate</MudButton>
     </MudStack>
 </MudContainer>
 
- @code {
-     
+@code {
+   // protected override async Task OnInitializedAsync()
+    //{
+      //  await Components.EventCardDisplay.getEvents();
+    //}
  }

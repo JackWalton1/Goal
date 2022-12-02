@@ -52,7 +52,7 @@ namespace EventDatabaseManagement
             }
         }
 
-        public async Task<EventModel> fetchAllEvents()
+        public async Task<List<EventModel>> fetchAllEvents()
         {
             using (var client = new HttpClient())
             {
@@ -63,7 +63,7 @@ namespace EventDatabaseManagement
                 var result = response.Content.ReadAsStringAsync().Result;
 
                 // Deserialize GET request.
-                return JsonConvert.DeserializeObject<EventModel>(result);
+                return JsonConvert.DeserializeObject<List<EventModel>>(result);
             }
         }
 
