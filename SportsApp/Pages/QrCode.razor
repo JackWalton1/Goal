@@ -1,0 +1,45 @@
+﻿@page "/qrCode"
+@using SportsApp
+@using StateManager
+
+<MudContainer Class="px-8">
+    <MudStack Spacing="4">
+        <MudButton Class="align-content-start justify-content-start" Size="Size.Large" Href="/" StartIcon="@Icons.Material.Filled.ChevronLeft">return to description</MudButton>
+        <MudItem Class="d-flex justify-space-between flex-grow-1">
+            <MudText Typo="Typo.h3" Align="Align.Center">ticket</MudText>
+            <MudIcon Icon="@StateManager.CurrentEvent.Icon" Align="center" />
+        </MudItem>
+        @*<MudImage ObjectFit="ObjectFit.Cover" Src=@StateManager.CurrentEvent.ImageURL Class="rounded-lg" Height="300" />*@
+    <MudCard>
+        @*<MudCardMedia Image="images/qr.png" />*@
+        <MudGrid Spacing="1" Justify="Justify.Center">
+            <MudCardContent>
+                <MudList>
+                    <MudListItem>
+                        @StateManager.CurrentEvent.VenueName
+                    </MudListItem>
+                    <MudListItem>
+                        @StateManager.CurrentEvent.VenueAddress
+                    </MudListItem>
+                    <MudListItem>
+                        @StateManager.CurrentEvent.Date
+                    </MudListItem>
+
+                </MudList>
+            </MudCardContent>
+            <MudImage Fluid="true" Width="400" Height="400" Align="Align.Right" Src="images/qrCode.jpeg" />
+        </MudGrid>
+        
+       
+        <MudCardActions>
+            <MudButton Variant="Variant.Text" Color="Color.Primary">Share</MudButton>
+            <MudButton Variant="Variant.Text" Href="/eventDescription" Color="Color.Primary">Learn More</MudButton>
+        </MudCardActions>
+    </MudCard>
+    </MudStack>
+</MudContainer>
+
+
+@code {
+}
+
