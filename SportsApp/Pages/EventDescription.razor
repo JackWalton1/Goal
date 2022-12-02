@@ -1,46 +1,36 @@
 ﻿@page "/eventDescription"
 @using SportsApp
+@using StateManager
 
 <MudContainer Class="px-8">
     <MudStack Spacing="4">
         <MudButton Class="align-content-start justify-content-start" Size="Size.Large" Href="/" StartIcon="@Icons.Material.Filled.ChevronLeft">back to home</MudButton>
         <MudItem Class="d-flex justify-space-between flex-grow-1">
-            <MudText Typo="Typo.h3" Align="Align.Center">@tempModel.Title</MudText>
-            <MudIcon Icon="@tempModel.Icon" Align="center" />
+            <MudText Typo="Typo.h3" Align="Align.Center">@StateManager.CurrentEvent.Title</MudText>
+            <MudIcon Icon="@StateManager.CurrentEvent.Icon" Align="center" />
         </MudItem>
-        <MudImage ObjectFit="ObjectFit.Cover" Src=@tempModel.ImageURL Class="rounded-lg" Height="300"/>
+        <MudImage ObjectFit="ObjectFit.Cover" Src=@StateManager.CurrentEvent.ImageURL Class="rounded-lg" Height="300" />
         <MudItem>
             <MudText Typo="Typo.subtitle1" Align="Align.Center">event overview</MudText>
             <MudList>
                 <MudListItem Avatar="@Icons.Filled.LocationOn">
-                    @tempModel.VenueName
+                    @StateManager.CurrentEvent.VenueName
                 </MudListItem>
                 <MudListItem Avatar="@Icons.Filled.Map">
-                    @tempModel.VenueAddress
+                    @StateManager.CurrentEvent.VenueAddress
                 </MudListItem>
                 <MudListItem Avatar="@Icons.Filled.DateRange">
-                    @tempModel.Date
+                    @StateManager.CurrentEvent.Date
                 </MudListItem>
             </MudList>
         </MudItem>
         <MudItem>
             <MudText Typo="Typo.subtitle1" Align="Align.Center">event description</MudText>
-            @tempModel.Description
+            @StateManager.CurrentEvent.Description
         </MudItem>
     </MudStack>
 </MudContainer>
 
 
-
 @code {
-    EventModel tempModel = new EventModel()
-        {
-            Title = "Fiorentina vs. Lazio",
-            Icon = "@Icons.Filled.SportsSoccer",
-            ImageURL = "https://media-foto.tcccdn.com/storage/album/1/1/thumb1/23/230fc5c9ef9d908d8c3f74d03c7a86fe-97828-1650123608.jpeg",
-            VenueName = "Stadio Olimpico",
-            VenueAddress = "Viale dei Gladiatori, 00135 Roma RM",
-            Date = "11/30/2022 12:00:00 AM",
-            Description = "Fiorentina is going head to head with Lazio starting on 10 Oct 2022 at 18:45 UTC at Stadio Artemio Franchi stadium, Florence city, Italy. The match is a part of the Serie A. Fiorentina played against Lazio in 1 matches this season. Currently, Fiorentina rank 10th, while Lazio hold 4th position."
-        };
 }

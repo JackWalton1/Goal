@@ -1,5 +1,6 @@
 ﻿@using EventDatabaseManagement
 ﻿@using StateManager
+@inject NavigationManager nav
 
 <MudCard Elevation="25" Class="d-flex pa-4 align-content-center rounded-lg">
     <MudStack>
@@ -12,11 +13,10 @@
             <MudText Typo="Typo.subtitle1" Align="Align.Left">@currentEvent.VenueName</MudText>
             <MudText Typo="Typo.subtitle1" Align="Align.Right">@currentEvent.Date.Substring(0, currentEvent.Date.IndexOf(' '))</MudText>
         </MudItem>
-        <MudButton Variant=Variant.Filled Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Learn more</MudButton>
-        <MudButton Variant=Variant.Filled Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Learn more</MudButton>
+        <MudButton OnClick="goToEventDisplay" Variant=Variant.Filled Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Learn more</MudButton>
         @if (StateManager.CurrentUser != null)
             {
-            <MudButton Align="center" Variant="Variant.Filled" OnClick="updateFollow">
+            <MudButton Align="center" OnClick="updateFollow">
                 @if (following)
                     {
                     <MudText>unfollow</MudText>
@@ -46,5 +46,11 @@
         {
             following = false;
         }
+    }
+
+    async Task goToEventDisplay()
+    {
+        StateManager.CurrentEvent = currentEvent;
+        nav.NavigateTo("/eventDescription");
     }
 }
