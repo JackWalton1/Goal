@@ -1,4 +1,4 @@
-@page "/membership"
+@page "/eventPay"
 @using Stripe
 @using SportsApp.Data
 @using System.Diagnostics
@@ -12,7 +12,7 @@
             <MudText Typo="Typo.h3" Align="Align.Center">payment</MudText>
             <MudText Align="Align.Center">you have selected the @StateManager.MembershipSelection plan, enter your credit card info</MudText>
         </MudItem>
-
+        
         <!-- REPLACE WITH MUDBLAZOR COMPONENTS -->
         <EditForm OnValidSubmit="@FormSubmit" Model="@accountOptions">
             <DataAnnotationsValidator />
@@ -46,19 +46,19 @@
             <br />
             <div class="row">
                 <div class="col-15 text-right">
-                    <button Variant="Variant.Filled" Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" type="submit">Pay Now</button>
+                    <MudButton Size="Size.Large" Href="/qrCode">pay</MudButton>
                 </div>
             </div>
 
         </EditForm>
 
-        @if (_processing)
-        {
-            <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
-            <MudText Class="ms-2">Processing</MudText>
-        }
-
-
+            @if (_processing)
+            {
+                <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                <MudText Class="ms-2">Processing</MudText>
+            }
+       
+      
 
     </MudStack>
 </MudContainer>
@@ -79,7 +79,7 @@
         Snackbar.Clear();
         Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
         Snackbar.Add("successfully paid!");
-        nav.NavigateTo("/");
+        nav.NavigateTo("/qrCode");
         _processing = false;
     }
 }
