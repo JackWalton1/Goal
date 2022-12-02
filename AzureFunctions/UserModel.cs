@@ -15,5 +15,6 @@ public class UserModel
     [Required] public string AccessLevel { get; set; }
     [Required] public string VenueName { get; set; }
     [Required] public string VenueAddress { get; set; }
+    [Required] public string[] EventsFollowed { get; set; }
 }
 

@@ -35,7 +35,7 @@ namespace AzureFunctions
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
 
-            // // Create new UserModel object.
+            // Create new UserModel object.
             var user = new UserModel { 
                 Username = data.Username, 
                 Password = data.Password, 
@@ -43,6 +43,7 @@ namespace AzureFunctions
                 AccessLevel = data.AccessLevel,
                 VenueName = data.VenueName,
                 VenueAddress = data.VenueAddress,
+                EventsFollowed = data.EventsFollowed
             };
 
             // Insert UserModel object into MongoDB.
