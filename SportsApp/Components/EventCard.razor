@@ -47,11 +47,4 @@
             following = false;
         }
     }
-
-    async Task viewEvent()
-    {
-        EventDatabaseManagement evm = new EventDatabaseManagement();
-        var result = await evm.fetchAllEvents();
-        System.Diagnostics.Debug.WriteLine(result);
-    }
 }

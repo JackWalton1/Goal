@@ -59,7 +59,7 @@ namespace EventDatabaseManagement
                 var endpoint = new Uri($"https://sportsfunctionapp.azurewebsites.net/api/FetchAllEvents");
 
                 // Make GET request.
-                var response = await client.GetAsync(endpoint);
+                var response = client.GetAsync(endpoint).Result;
                 var result = response.Content.ReadAsStringAsync().Result;
 
                 // Deserialize GET request.

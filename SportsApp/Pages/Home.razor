@@ -26,8 +26,8 @@
 </MudContainer>
 
 @code {
-   // protected override async Task OnInitializedAsync()
-    //{
-      //  await Components.EventCardDisplay.getEvents();
-    //}
+   protected override async void OnInitialized()
+   {
+        Components.EventCardDisplay.getEvents();
+   }
  }

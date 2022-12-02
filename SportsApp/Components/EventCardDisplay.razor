@@ -10,9 +10,9 @@
 }
 
 @code {
-    public static async Task getEvents()
+    public static async void getEvents()
     {
         EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
-        StateManager.AllEvents = await eventDatabaseManagement.fetchAllEvents();
+        StateManager.AllEvents = eventDatabaseManagement.fetchAllEvents().Result;
     }
 }
