@@ -44,19 +44,25 @@
             </div>
             <br />
             <br />
-            <div class="row">
-                <div class="col-15 text-right">
-                    <MudButton Size="Size.Large" Href="/qrCode">pay</MudButton>
-                </div>
-            </div>
+            <MudButton OnClick="processAccountCreation" Disabled="@_processing" Variant="Variant.Filled">
+                @if (_processing)
+                {
+                    <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                    <MudText Class="ms-2">Processing</MudText>
+                }
+                else
+                {
+                    <MudText>purchase</MudText>
+                }
+            </MudButton>
 
         </EditForm>
 
-            @if (_processing)
+            @*@if (_processing)
             {
                 <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
                 <MudText Class="ms-2">Processing</MudText>
-            }
+            }*@
        
       
 
@@ -72,14 +78,14 @@
 
     }
     private bool _processing = false;
-    async Task ProcessSomething()
+    async Task processAccountCreation()
     {
         _processing = true;
-        await Task.Delay(2000);
+        await Task.Delay(1000);
         Snackbar.Clear();
         Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
-        Snackbar.Add("successfully paid!");
-        nav.NavigateTo("/qrCode");
+        Snackbar.Add(" successfully paid", Severity.Success);
         _processing = false;
+        nav.NavigateTo("/qrCode");
     }
 }
