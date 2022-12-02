@@ -13,16 +13,23 @@
 
 <MudContainer Class="px-8">
     <MudStack Spacing="8">
-        <MudButton Class="align-content-start justify-content-start" Size="Size.Large" Href="/login" StartIcon="@Icons.Material.Filled.ChevronLeft">back to log in</MudButton>
+        @if (StateManager.CurrentUser != null && StateManager.CurrentUser.AccessLevel == "Town Admin")
+        {
+            <MudButton Class="align-content-start justify-content-start" Size="Size.Large" Href="/profile" StartIcon="@Icons.Material.Filled.ChevronLeft">back to profile</MudButton>
+        }
+        else
+        {
+            <MudButton Class="align-content-start justify-content-start" Size="Size.Large" Href="/login" StartIcon="@Icons.Material.Filled.ChevronLeft">back to log in</MudButton>
 
+        }
         <MudItem>
             <MudText Typo="Typo.h3" Align="Align.Center">create account</MudText>
             <MudText Align="Align.Center">* = required field</MudText>
         </MudItem>
 
         <MudTextField Align="center" Required="true" RequiredError="username is required" @bind-Value="Username" Label="username" Variant="Variant.Outlined"></MudTextField>
-        <MudTextField Align="center" Required="true" RequiredError="password is required" @bind-Value="Password" Label="password" Variant="Variant.Outlined" 
-            InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="viewPassword" AdornmentAriaLabel="Show Password"></MudTextField>
+        <MudTextField Align="center" Required="true" RequiredError="password is required" @bind-Value="Password" Label="password" Variant="Variant.Outlined"
+                      InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="viewPassword" AdornmentAriaLabel="Show Password"></MudTextField>
         <MudTextField Align="center" Required="true" RequiredError="location is required" @bind-Value="Location" Label="location" Variant="Variant.Outlined"></MudTextField>
         @if (StateManager.CurrentUser != null && StateManager.CurrentUser.AccessLevel == "Town Admin")
         {

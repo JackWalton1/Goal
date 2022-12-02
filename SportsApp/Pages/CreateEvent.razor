@@ -70,7 +70,7 @@
         Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
 
         EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
-        eventDatabaseManagement.createEvent(title, icon, imageURL, venueName, venueAddress, date.ToString(), description);
+        eventDatabaseManagement.createEvent(title, icon, imageURL, venueName, venueAddress, date.ToString(), description, 0);
 
         Snackbar.Add("event successfully created", Severity.Success);
         processing = false;
