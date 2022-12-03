@@ -4,7 +4,9 @@
 
 <MudContainer Class="pa-8">
     <MudStack Spacing="16">
-        <!--Fix my button riley.....-->
+
+        <!--Fix my button riley..... : -->
+
         <MudButton Class="align-content-start justify-content-start" Size="Size.Large" Href="/profile" StartIcon="@Icons.Material.Filled.ChevronLeft">back to profile</MudButton>
         <MudItem>
             @if (StateManager.CurrentUser == null)
@@ -20,6 +22,7 @@
 
         <!--Upcoming events-->
         <MudStack Spacing="4">
+            <MudText Typo="Typo.h3" Align="Align.Left">Following: @StateManager.CurrentUser.FollowCount</MudText>
             <MudText Typo="Typo.h4" Align="Align.Left">Events you follow:</MudText>
             <MudStack Row="true" Class="overflow-scroll">
                 <!--TODO: REPLACE WITH CONDITIONAL RENDERING FROM DATABASE-->
