@@ -40,7 +40,7 @@ namespace AzureFunctions
             dynamic data = JsonConvert.DeserializeObject(requestBody);
 
             // Extract updated information from JSON.
-            List<string> new_events_followed = data.EventsFollowed;
+            string new_events_followed = data.EventsFollowed;
 
             // Retrieve username from query.
             string submitted_username = req.Query["username"];

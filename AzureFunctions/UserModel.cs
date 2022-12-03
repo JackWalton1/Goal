@@ -14,9 +14,14 @@ public class UserModel
     [Required] public string Password { get; set; }
     [Required] public string Location { get; set; }
     [Required] public string AccessLevel { get; set; }
+    // For Users, (avoiding making an abstract class and refactoring)
+    [Required] public string EventsFollowed { get; set; }
+    // For Town Admins
     [Required] public string VenueName { get; set; }
     [Required] public string VenueAddress { get; set; }
-    [Required] public List<string> EventsFollowed { get; set; }
+    [Required] public string EventIDs { get; set; }
+    [Required] public string UserFollowers { get; set; }
+    // For Both user and Town Admins, to be dealt with differently tho
     [Required] public int FollowCount { get; set; }
 }
 

@@ -58,6 +58,9 @@
     public string AccessLevel { get; set; }
     public string VenueName { get; set; }
     public string VenueAddress { get; set; }
+    public string EventsFollowed = "";
+    public string EventIDs = "";
+    public string UserFollowers = "";
 
     private bool _processing = false;
 
@@ -91,10 +94,10 @@
 
         if (StateManager.CurrentUser != null && StateManager.CurrentUser.AccessLevel == "Town Admin")
         {
-            userDatabaseManagement.createAccount(Username, Password, Location, "Town Admin", VenueName, VenueAddress, null, 0);
+            userDatabaseManagement.createAccount(Username, Password, Location, "Town Admin", null, VenueName, VenueAddress, EventIDs, UserFollowers, 0);
         } else
         {
-            userDatabaseManagement.createAccount(Username, Password, Location, "Citizen", null, null, null, 0);
+            userDatabaseManagement.createAccount(Username, Password, Location, "Citizen", EventsFollowed, null, null, null, null, 0);
         }
 
         StateManager.CurrentUser = await userDatabaseManagement.fetchAccount(Username, Password);

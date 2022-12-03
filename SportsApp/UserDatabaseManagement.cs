@@ -8,7 +8,7 @@ namespace UserDatabaseManagement
 {
 	public class UserDatabaseManagement
 	{
-        public async void createAccount(string username, string password, string location, string access_level, string VenueName, string VenueAddress, List<string> EventsFollowed, int FollowCount)
+        public async void createAccount(string username, string password, string location, string access_level, string EventsFollowed, string VenueName, string VenueAddress, string EventIDs, string UserFollowers, int FollowCount)
         {
 
             using (var client = new HttpClient())
@@ -52,7 +52,7 @@ namespace UserDatabaseManagement
             }
         }
 
-        public async void updateAccount(string username, List<string> new_events_followed)
+        public async void updateAccount(string username, string new_events_followed)
         {
             using (var client = new HttpClient())
             {
