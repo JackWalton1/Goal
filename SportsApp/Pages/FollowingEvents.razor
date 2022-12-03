@@ -1,0 +1,37 @@
+﻿@page "/followingEvents"
+@using StateManager
+@inject NavigationManager nav
+
+<MudContainer Class="pa-8">
+    <MudStack Spacing="16">
+        <!--Fix my button riley.....-->
+        <MudButton Class="align-content-start justify-content-start" Size="Size.Large" Href="/profile" StartIcon="@Icons.Material.Filled.ChevronLeft">back to profile</MudButton>
+        <MudItem>
+            @if (StateManager.CurrentUser == null)
+            {
+                <MudText Typo="Typo.h3" Align="Align.Center">hello</MudText>
+            }
+            else
+            {
+                <MudText Typo="Typo.h3" Align="Align.Center">hello @StateManager.CurrentUser.Username.ToLower()</MudText>
+            }
+            <MudText Align="Align.Center">welcome to your following page. see all events you follow here</MudText>
+        </MudItem>
+
+        <!--Upcoming events-->
+        <MudStack Spacing="4">
+            <MudText Typo="Typo.h4" Align="Align.Left">Events you follow:</MudText>
+            <MudStack Row="true" Class="overflow-scroll">
+                <!--TODO: REPLACE WITH CONDITIONAL RENDERING FROM DATABASE-->
+                <SportsApp.Components.EventCardDisplayFollowing />
+            </MudStack>
+        </MudStack>
+    </MudStack>
+</MudContainer>
+
+@code {
+    protected override async void OnInitialized()
+    {
+        Components.EventCardDisplay.getEvents();
+    }
+}

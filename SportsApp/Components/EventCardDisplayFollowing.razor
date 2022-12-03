@@ -1,0 +1,21 @@
+﻿@using EventDatabaseManagement
+@using StateManager
+
+@if (StateManager.AllEvents != null)
+{
+    @foreach (EventModel eventItem in StateManager.AllEvents)
+        {
+            var followingList = StateManager.CurrentUser.EventsFollowed.Split(',').ToList();
+            @if (followingList.Any(s => s.Contains(eventItem.Id))) {
+               <SportsApp.Components.EventCard currentEvent=eventItem />
+         }
+     }
+ }
+
+@code {
+    public static async void getEvents()
+    {
+        EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
+        StateManager.AllEvents = eventDatabaseManagement.fetchAllEvents().Result;
+    }
+}

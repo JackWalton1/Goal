@@ -52,7 +52,7 @@ namespace UserDatabaseManagement
             }
         }
 
-        public async void updateAccount(string username, string new_events_followed)
+        public async void updateAccount(string username, string new_events_followed, int newFollowingCount)
         {
             using (var client = new HttpClient())
             {
@@ -61,7 +61,8 @@ namespace UserDatabaseManagement
                 // Create new UserModel object that contains the updated user info.
                 var updatedUser = new UserModel()
                 {
-                    EventsFollowed = new_events_followed
+                    EventsFollowed = new_events_followed,
+                    FollowCount = newFollowingCount
                 };
 
                 // Serialize JSON updated user information.
@@ -70,7 +71,6 @@ namespace UserDatabaseManagement
 
                 // Make POST request.
                 var response = await client.PostAsync(endpoint, payload);
-
             }
         }
     }

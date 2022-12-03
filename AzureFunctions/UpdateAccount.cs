@@ -42,6 +42,10 @@ namespace AzureFunctions
             // Extract updated information from JSON.
             string new_events_followed = data.EventsFollowed;
 
+            // Extract updated information from JSON.
+            // //jack add
+            int newFollowCount = data.FollowCount;
+
             // Retrieve username from query.
             string submitted_username = req.Query["username"];
 
@@ -49,6 +53,9 @@ namespace AzureFunctions
             var filterDefinition = Builders<UserModel>.Filter.Eq(document => document.Username, submitted_username);
             var updateDefinition = Builders<UserModel>.Update
                 .Set(document => document.EventsFollowed, new_events_followed);
+            //jack add
+            var updateDefinition2 = Builders<UserModel>.Update
+                .Set(document => document.FollowCount, newFollowCount);
 
             var optionsDefinition = new FindOneAndUpdateOptions<UserModel, UserModel>()
             {
@@ -57,6 +64,8 @@ namespace AzureFunctions
 
             // Find and update account information.
             var result = collection.FindOneAndUpdate(filterDefinition, updateDefinition, optionsDefinition);
+            //jack add
+            result = collection.FindOneAndUpdate(filterDefinition, updateDefinition2, optionsDefinition);
 
             if (result != null)
             {

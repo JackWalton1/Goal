@@ -2,6 +2,7 @@
 ﻿@using StateManager
 @inject NavigationManager nav
 
+
 <MudCard Elevation="25" Class="d-flex pa-4 align-content-center rounded-lg">
     <MudStack>
         <MudItem Class="d-flex justify-space-between flex-grow-1">
@@ -17,7 +18,7 @@
         @if (StateManager.CurrentUser != null)
             {
             <MudButton Align="center" OnClick="updateFollow">
-                @if (following)
+                @if (StateManager.CurrentUser.EventsFollowed.Split(',').ToList().Any(s => s.Contains(currentEvent.Id)))
                     {
                     <MudText>unfollow</MudText>
                     }
@@ -36,20 +37,44 @@
 
     public bool following = false;
 
+    //    List<string> listEventsFollowed = StateManager.CurrentUser.EventsFollowed.Split(',').ToList();
+    //if(StateManager.CurrentUser.EventsFollowed.Split(',').ToList().Any(s => s.Contains(currentEvent.Id))){
+    //    following = true;
+    //}
+
     async Task updateFollow()
     {
-        // UserDatabaseManagement userDatabaseManagement = new UserDatabaseManagement();
-        // StateManager.CurrentUser.EventsFollowed.Add(currentEvent.Id);
-        // userDatabaseManagement.updateAccount(StateManager.CurrentUser.Username, StateManager.CurrentUser.EventsFollowed);
+        following = StateManager.CurrentUser.EventsFollowed.Split(',').ToList().Any(s => s.Contains(currentEvent.Id));
+        UserDatabaseManagement userDatabaseManagement = new UserDatabaseManagement();
 
         if (following == false)
         {
+            if(StateManager.CurrentUser.EventsFollowed.Length == 0)
+            {
+                StateManager.CurrentUser.EventsFollowed += currentEvent.Id;
+            }
+            else
+            {
+                StateManager.CurrentUser.EventsFollowed += ","+currentEvent.Id;
+
+            }
+            StateManager.CurrentUser.FollowCount++;
+            userDatabaseManagement.updateAccount(StateManager.CurrentUser.Username, StateManager.CurrentUser.EventsFollowed, StateManager.CurrentUser.FollowCount);
+
             following = true;
         }
         else
         {
+            List<string> listEventsFollowed = StateManager.CurrentUser.EventsFollowed.Split(',').ToList();
+            if(listEventsFollowed.Any(s => s.Contains(currentEvent.Id))){
+                listEventsFollowed.RemoveAll(x => x.StartsWith(@currentEvent.Id));
+                StateManager.CurrentUser.EventsFollowed = string.Join(",", listEventsFollowed);
+                StateManager.CurrentUser.FollowCount--;
+                userDatabaseManagement.updateAccount(StateManager.CurrentUser.Username, StateManager.CurrentUser.EventsFollowed, StateManager.CurrentUser.FollowCount);
+            }
             following = false;
         }
+
     }
 
     async Task goToEventDisplay()
