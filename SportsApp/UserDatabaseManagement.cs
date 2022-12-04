@@ -83,6 +83,7 @@ namespace UserDatabaseManagement
                 // Create new UserModel object that contains the updated user info.
                 var updatedUser = new UserModel()
                 {
+
                     EventIDs = newAdminEventIDs
                 };
 
@@ -92,6 +93,7 @@ namespace UserDatabaseManagement
 
                 // Make POST request.
                 var response = await client.PostAsync(endpoint, payload);
+
                 //HttpResponseMessage response = await client.PostAsync(endpoint, payload);
             }
         }

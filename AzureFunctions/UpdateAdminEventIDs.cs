@@ -49,7 +49,7 @@ namespace AzureFunctions
             var filterDefinition = Builders<UserModel>.Filter.Eq(document => document.Username, submitted_username);
             var updateDefinition = Builders<UserModel>.Update
                 .Set(document => document.EventIDs, new_eventIDs);
-  
+
             var optionsDefinition = new FindOneAndUpdateOptions<UserModel, UserModel>()
             {
                 ReturnDocument = ReturnDocument.After
