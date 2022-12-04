@@ -11,7 +11,7 @@
         </MudItem>
         <MudImage ObjectFit="ObjectFit.Cover" Src=@StateManager.CurrentEvent.ImageURL Class="rounded-lg" Height="300" />
         <MudItem>
-            <MudText Typo="Typo.subtitle1" Align="Align.Center">event overview</MudText>
+            <MudText Typo="Typo.h5" Align="Align.Center">event overview</MudText>
             <MudList>
                 <MudListItem Avatar="@Icons.Filled.LocationOn">
                     @StateManager.CurrentEvent.VenueName
@@ -25,7 +25,7 @@
             </MudList>
         </MudItem>
         <MudItem>
-            <MudText Typo="Typo.subtitle1" Align="Align.Center">event description</MudText>
+            <MudText Typo="Typo.h5" Align="Align.Center">event description</MudText>
             @StateManager.CurrentEvent.Description
         </MudItem>
     </MudStack>
