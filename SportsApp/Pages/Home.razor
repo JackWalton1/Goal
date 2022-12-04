@@ -7,16 +7,25 @@
             @if (StateManager.CurrentUser == null)
             {
                 <MudText Typo="Typo.h3" Align="Align.Center">hello</MudText>
-            } else
+            }
+            else
             {
                 <MudText Typo="Typo.h3" Align="Align.Center">hello @StateManager.CurrentUser.Username.ToLower()</MudText>
+                @if (StateManager.CurrentUser.AccessLevel == "Citizen")
+                {
+                    <MudText Align="Align.Center">welcome to goal - see your upcoming and recommended events here.</MudText>
+                }
+                else
+                {
+                    <MudText Align="Align.Center">welcome to goal - see events all admins have posted here.</MudText>
+
+                }
             }
-            <MudText Align="Align.Center">welcome to goal - see your upcoming and recommended events here.</MudText>
         </MudItem>
 
         <!--Upcoming events-->
         <MudStack Spacing="4">
-            <MudText Typo="Typo.h4" Align="Align.Left">your recommended events</MudText>
+            <MudText Typo="Typo.h4" Align="Align.Left">upcoming events in your area</MudText>
             <MudStack Row="true" Class="overflow-scroll">
                 <!--TODO: REPLACE WITH CONDITIONAL RENDERING FROM DATABASE-->
                 <SportsApp.Components.EventCardDisplay/>

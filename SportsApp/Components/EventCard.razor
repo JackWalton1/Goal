@@ -15,7 +15,7 @@
             <MudText Typo="Typo.subtitle1" Align="Align.Right">@currentEvent.Date.Substring(0, currentEvent.Date.IndexOf(' '))</MudText>
         </MudItem>
         <MudButton OnClick="goToEventDisplay" Variant=Variant.Filled Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" FullWidth="true">Learn more</MudButton>
-        @if (StateManager.CurrentUser != null)
+        @if (StateManager.CurrentUser != null && StateManager.CurrentUser.AccessLevel == "Citizen")
             {
             <MudButton Align="center" OnClick="updateFollow">
                 @if (StateManager.CurrentUser.EventsFollowed.Split(',').ToList().Any(s => s.Contains(currentEvent.Id)))
