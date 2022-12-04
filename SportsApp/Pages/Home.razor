@@ -28,9 +28,12 @@
             <MudText Typo="Typo.h4" Align="Align.Left">upcoming events in your area</MudText>
             <MudStack Row="true" Class="overflow-scroll">
                 <!--TODO: REPLACE WITH CONDITIONAL RENDERING FROM DATABASE-->
-                <SportsApp.Components.EventCardDisplay/>
+                <SportsApp.Components.EventCardDisplay />
             </MudStack>
-        </MudStack>     
+        </MudStack>
+        <MudPaper Elevation="0" Class="pa-4" Style="height: 600px; width: 1200px; ">
+            <iframe src="MapTest.html"></iframe>
+        </MudPaper>
     </MudStack>
 </MudContainer>
 

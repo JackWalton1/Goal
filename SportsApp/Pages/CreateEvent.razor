@@ -72,22 +72,22 @@
         Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
 
         EventDatabaseManagement eventDatabaseManagement = new EventDatabaseManagement();
-        UserDatabaseManagement userDatabaseManagement = new UserDatabaseManagement();
+        //UserDatabaseManagement userDatabaseManagement = new UserDatabaseManagement();
 
         eventDatabaseManagement.createEvent(title, icon, imageURL, venueName, venueAddress, date.ToString(), description, 0);
-        StateManager.AllEvents = eventDatabaseManagement.fetchAllEvents().Result;
-        List<EventModel> events = StateManager.AllEvents;
-        EventModel currentEvent = events.FirstOrDefault(o => o.Title == title);
+        //StateManager.AllEvents = eventDatabaseManagement.fetchAllEvents().Result;
+        //List<EventModel> events = StateManager.AllEvents;
+        //EventModel currentEvent = events.FirstOrDefault(o => o.Title == title);
 
-        if (StateManager.CurrentUser.EventIDs == "none" || StateManager.CurrentUser.EventIDs == "")
-        {
-            StateManager.CurrentUser.EventIDs = currentEvent.Id;
-        }
-        else
-        {
-            StateManager.CurrentUser.EventIDs += ","+currentEvent.Id;
-        }
-        userDatabaseManagement.updateAdminEventIDs(StateManager.CurrentUser.Username, StateManager.CurrentUser.EventIDs);
+        //if (StateManager.CurrentUser.EventIDs == "none" || StateManager.CurrentUser.EventIDs == "")
+        //{
+        //    StateManager.CurrentUser.EventIDs = currentEvent.Id;
+        //}
+        //else
+        //{
+        //    StateManager.CurrentUser.EventIDs += ","+currentEvent.Id;
+        //}
+        //userDatabaseManagement.updateAdminEventIDs(StateManager.CurrentUser.Username, StateManager.CurrentUser.EventIDs);
 
         Snackbar.Add("event successfully created", Severity.Success);
         processing = false;
