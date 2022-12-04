@@ -73,6 +73,26 @@ namespace UserDatabaseManagement
                 var response = await client.PostAsync(endpoint, payload);
             }
         }
+        public async void updateAdminEventIDs(string username, string new_eventIDs)
+        {
+            using (var client = new HttpClient())
+            {
+                var endpoint = new Uri($"https://sportsfunctionapp.azurewebsites.net/api/UpdateAdminEventIDs?username={username}");
+
+                // Create new UserModel object that contains the updated user info.
+                var updatedUser = new UserModel()
+                {
+                    EventIDs = new_eventIDs
+                };
+
+                // Serialize JSON updated user information.
+                var newPostJson = JsonConvert.SerializeObject(updatedUser);
+                var payload = new StringContent(newPostJson, Encoding.UTF8, "application/json");
+
+                // Make POST request.
+                var response = await client.PostAsync(endpoint, payload);
+            }
+        }
     }
 }
 
