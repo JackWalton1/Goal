@@ -57,7 +57,7 @@ namespace AzureFunctions
 
             // Find and update account information.
             var result = collection.FindOneAndUpdate(filterDefinition, updateDefinition, optionsDefinition);
-            
+
             if (result != null)
             {
                 return new OkObjectResult(result);
