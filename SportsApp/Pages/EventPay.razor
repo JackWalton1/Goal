@@ -10,9 +10,9 @@
     <MudStack Spacing="4">
         <MudItem>
             <MudText Typo="Typo.h3" Align="Align.Center">payment</MudText>
-            <MudText Align="Align.Center">you have selected the @StateManager.MembershipSelection plan, enter your credit card info</MudText>
+            <MudText Align="Align.Center">enter your credit card info</MudText>
         </MudItem>
-        
+        <MudButton Class="align-content-start justify-content-start" Size="Size.Large" Href="/eventDescription" StartIcon="@Icons.Material.Filled.ChevronLeft">back to event description</MudButton>
         <!-- REPLACE WITH MUDBLAZOR COMPONENTS -->
         <EditForm OnValidSubmit="@FormSubmit" Model="@accountOptions">
             <DataAnnotationsValidator />
