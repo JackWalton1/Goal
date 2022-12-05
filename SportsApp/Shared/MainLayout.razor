@@ -4,6 +4,13 @@
 <MudThemeProvider />
 <MudSnackbarProvider />
 <MudLayout>
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+    <MudSpacer/>
+    <MudSpacer/>
+    <MudSpacer />
+    <MudSpacer />
     <MudAppBar Style="@($"color:{Colors.Grey.Darken3}; background:{Colors.Grey.Lighten2};")" Fixed="true" Dense="true" Bottom="true">
         @if (StateManager.CurrentUser == null)
         {
@@ -21,9 +28,6 @@
             <MudNavLink Href="/profile" Icon="@Icons.Filled.Person"></MudNavLink>
         }
     </MudAppBar>
-    <MudMainContent>
-        @Body
-    </MudMainContent>
 </MudLayout>
 
 @code {
