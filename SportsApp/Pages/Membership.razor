@@ -12,6 +12,7 @@
             <MudText Typo="Typo.h3" Align="Align.Center">payment</MudText>
             <MudText Align="Align.Center">you have selected the @StateManager.MembershipSelection plan, enter your credit card info</MudText>
         </MudItem>
+        <MudButton Class="align-content-start justify-content-start" Size="Size.Large" Href="/payment" StartIcon="@Icons.Material.Filled.ChevronLeft">back to quotas</MudButton>
 
         <!-- REPLACE WITH MUDBLAZOR COMPONENTS -->
         <EditForm OnValidSubmit="@FormSubmit" Model="@accountOptions">
@@ -44,19 +45,25 @@
             </div>
             <br />
             <br />
-            <div class="row">
-                <div class="col-15 text-right">
-                    <button Variant="Variant.Filled" Align="center" Size="Size.Large" EndIcon="@Icons.Material.Filled.ChevronRight" type="submit">Pay Now</button>
-                </div>
-            </div>
+            <MudButton OnClick="processAccountCreation" Disabled="@_processing" Variant="Variant.Filled">
+                @if (_processing)
+                {
+                    <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                    <MudText Class="ms-2">Processing</MudText>
+                }
+                else
+                {
+                    <MudText>purchase</MudText>
+                }
+            </MudButton>
 
         </EditForm>
 
-        @if (_processing)
+        @*@if (_processing)
         {
             <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
             <MudText Class="ms-2">Processing</MudText>
-        }
+        }*@
 
 
 
@@ -72,14 +79,14 @@
 
     }
     private bool _processing = false;
-    async Task ProcessSomething()
+    async Task processAccountCreation()
     {
         _processing = true;
-        await Task.Delay(2000);
+        await Task.Delay(1000);
         Snackbar.Clear();
         Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomLeft;
-        Snackbar.Add("successfully paid!");
-        nav.NavigateTo("/");
+        Snackbar.Add(" successfully paid", Severity.Success);
         _processing = false;
+        nav.NavigateTo("/profile");
     }
 }
